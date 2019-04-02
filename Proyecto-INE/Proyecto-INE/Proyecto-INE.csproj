@@ -1407,15 +1407,12 @@
     <Content Include="Views\Persona\Login.cshtml" />
     <Content Include="Views\Persona\Normas.cshtml" />
     <Content Include="Views\Persona\Usuario.cshtml" />
-    <Content Include="Views\Boletas\Apodaca.cshtml" />
-    <Content Include="Views\Boletas\Monterrey.cshtml" />
-    <Content Include="Views\Boletas\Pesqueria.cshtml" />
-    <Content Include="Views\Boletas\Escobedo.cshtml" />
     <Content Include="Views\Persona\CC.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="obj\Debug\TempPE\" />
+    <Folder Include="Views\Boletas\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
