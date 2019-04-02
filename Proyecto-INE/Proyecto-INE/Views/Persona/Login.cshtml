@@ -1,0 +1,90 @@
+﻿@model Proyecto_INE.ViewModels.PersonaViewModel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <link rel="shortcut icon" href="~/Images/inne.ico">
+
+    <link rel="shortcut icon" href="inne.ico" />
+    <script language="JavaScript">
+        var txt = "Instituto Nacional Electoral-INE-";
+        var espera = 75;
+        var refresco = null;
+        function rotulo_title() {
+            document.title = txt;
+            txt = txt.substring(1, txt.length) + txt.charAt(0);
+            refresco = setTimeout("rotulo_title()", espera);
+        }
+        rotulo_title();
+    </script>
+    <link rel="stylesheet" type="text/css" href="~/css/login.css" />
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <input type="checkbox" id="nav" class="hidden" />
+            <label for="nav" class="nav-btn">
+                <i></i>
+                <i></i>
+                <i></i>
+            </label>
+            <div class="logo">
+                <img src="~/Images/map.jpg" width="150px" />
+            </div>
+            <div class="nav-wrapper">
+                <ul>
+                    <li><a href="@Url.Action("Index", "Home")">Inicio</a></li>
+                    <li><a href="Candidatos.html">Candidatos</a></li>
+                    <li><a href="~/Views/Home/Index.cshtml">Estadisticas</a></li>
+                    <li><a href="cuenta.html">Votar</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    @using (Html.BeginForm("Login", "Persona", FormMethod.Post))
+    {
+      
+
+        <div class="containerr">
+            <h2>REGISTRO</h2>
+            <div class="form-container">
+                <form>
+                    <div class="L">
+                        @Html.ValidationSummary(true, " ", new { @class = "text-danger" })
+                        @Html.LabelFor(model => model.Curp, htmlAttributes: new { @class = "control-label col-md-2" })
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.Curp, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.Curp, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    <br />
+                    <div class="F">
+                        @Html.LabelFor(model => model.CIC, htmlAttributes: new { @class = "control-label col-md-2" })
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.CIC, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor( model => model.CIC, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    <br /><br />
+                          <button type="submit" value="Confirmar" class="btn btn-default"> LOGIN</button>
+                   
+
+                    <img id="cpv" src="~/Images/CPV.jpg" />
+                </form>
+            </div>
+        </div>
+    }
+
+
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+</body>
+</html>
+

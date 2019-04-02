@@ -1,0 +1,112 @@
+﻿@model Proyecto_INE.Models.Persona
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <link rel="shortcut icon" href="~/Images/inne.ico">
+    <script language="JavaScript">
+        var txt = "Instituto Nacional Electoral-INE-";
+        var espera = 75;
+        var refresco = null;
+        function rotulo_title() {
+            document.title = txt;
+            txt = txt.substring(1, txt.length) + txt.charAt(0);
+            refresco = setTimeout("rotulo_title()", espera);
+        }
+        rotulo_title();
+    </script>
+
+    <link rel="stylesheet" type="text/css" href="~/css/usuario.css" />
+
+</head>
+<link rel="stylesheet" type="text/css" href="~/css/usuario.css" />
+<body>
+    <div class="container">
+        <nav>
+            <input type="checkbox" id="nav" class="hidden">
+            <label for="nav" class="nav-btn">
+                <i></i>
+                <i></i>
+                <i></i>
+            </label>
+            <div class="logo">
+                <img src="~/Images/map.jpg" width="150px">
+            </div>
+            <div class="nav-wrapper">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="Candidatos.html">Candidatos</a></li>
+                    <li><a href="#">Estadisticas</a></li>
+                    <li><a href="@Url.Action("Login", "Persona")">Votar</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+
+    <div class="centerrr">
+        @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/bootstrap")
+
+        <div align='center'>
+            <img src="~/Images/@ViewBag.foto" width="150" height="150" />
+        </div>
+        <br /><br />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Nombre)
+            </dt>
+
+            <dd>
+                <div class="cen">   @Html.DisplayFor(model => model.Nombre) </div>
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.ApellidoPaterno)
+            </dt>
+
+            <dd>
+                <div class="cen">    @Html.DisplayFor(model => model.ApellidoPaterno) </div>
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.ApellidoMaterno)
+            </dt>
+
+            <dd>
+                <div class="cen">    @Html.DisplayFor(model => model.ApellidoMaterno) </div>
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.FechaNacimiento)
+            </dt>
+
+            <dd>
+                <div class="cen">  @Html.DisplayFor(model => model.FechaNacimiento) </div>
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Sexo)
+            </dt>
+
+            <dd>
+                <div class="cen">  @Html.DisplayFor(model => model.Sexo) </div>
+            </dd>
+
+
+
+        </dl>
+
+        <a type="submit" value="Confirmar" href="@Url.Action("Normas", "Persona")" class="button">Aceptar</a>
+
+    </div>
+
+
+</body>
+</html>
+
