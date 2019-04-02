@@ -1,0 +1,119 @@
+﻿@model IEnumerable<Proyecto_INE.ViewModels.CandidatoViewModel>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>CC</title>
+</head>
+<body>
+    @using (Html.BeginForm("Login", "Persona", FormMethod.Post))
+    {
+
+        List<Proyecto_INE.ViewModels.CandidatoViewModel> list1 = (List<Proyecto_INE.ViewModels.CandidatoViewModel>)Session["presi"];
+        List<Proyecto_INE.ViewModels.CandidatoViewModel> list2 = (List<Proyecto_INE.ViewModels.CandidatoViewModel>)Session["gober"];
+        List<Proyecto_INE.ViewModels.CandidatoViewModel> list3 = (List<Proyecto_INE.ViewModels.CandidatoViewModel>)Session["muni"];
+
+        <table class="table">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.NombreCandidato)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ApellidoPaternoCandidato)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ApellidoMaternoCandidato)
+                </th>
+                <th></th>
+            </tr>
+
+            @foreach (var item in list1)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.NombreCandidato)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ApellidoPaternoCandidato)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ApellidoMaternoCandidato)
+                    </td>
+
+                </tr>
+            }
+
+        </table>
+
+        <table class="table">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.NombreCandidato)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ApellidoPaternoCandidato)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ApellidoMaternoCandidato)
+                </th>
+                <th></th>
+            </tr>
+
+            @foreach (var item in list2)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.NombreCandidato)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ApellidoPaternoCandidato)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ApellidoMaternoCandidato)
+                    </td>
+
+                </tr>
+            }
+
+        </table>
+
+        <table class="table">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.NombreCandidato)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ApellidoPaternoCandidato)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ApellidoMaternoCandidato)
+                </th>
+                <th></th>
+            </tr>
+
+            @foreach (var item in list3)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.NombreCandidato)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ApellidoPaternoCandidato)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ApellidoMaternoCandidato)
+                    </td>
+
+                </tr>
+            }
+
+        </table>
+    }
+</body>
+</html>

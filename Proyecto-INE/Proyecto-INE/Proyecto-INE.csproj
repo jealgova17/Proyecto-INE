@@ -53,10 +53,270 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
+    <Reference Include="Highcharts.Web.Mvc, Version=7.0.1.0, Culture=neutral, PublicKeyToken=90b74bd27a557bd3, processorArchitecture=MSIL">
+      <HintPath>..\packages\Highsoft.Highcharts.7.0.3.10\lib\net40\Highcharts.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="Highsoft.Web.Mvc, Version=5.0.14.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Highsoft.Web.Mvc.5.0.14\lib\net461\Highsoft.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Antiforgery, Version=1.1.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Antiforgery.1.1.2\lib\net451\Microsoft.AspNetCore.Antiforgery.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Authorization, Version=1.1.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Authorization.1.1.2\lib\net451\Microsoft.AspNetCore.Authorization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Cors, Version=1.1.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Cors.1.1.2\lib\net451\Microsoft.AspNetCore.Cors.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Cryptography.Internal, Version=1.1.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Cryptography.Internal.1.1.2\lib\net451\Microsoft.AspNetCore.Cryptography.Internal.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.DataProtection, Version=1.1.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.DataProtection.1.1.2\lib\net451\Microsoft.AspNetCore.DataProtection.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.DataProtection.Abstractions, Version=1.1.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.DataProtection.Abstractions.1.1.2\lib\net451\Microsoft.AspNetCore.DataProtection.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Diagnostics.Abstractions, Version=1.1.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Diagnostics.Abstractions.1.1.2\lib\netstandard1.0\Microsoft.AspNetCore.Diagnostics.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Hosting.Abstractions, Version=1.1.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Hosting.Abstractions.1.1.2\lib\net451\Microsoft.AspNetCore.Hosting.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Hosting.Server.Abstractions, Version=1.1.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Hosting.Server.Abstractions.1.1.2\lib\net451\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Html.Abstractions, Version=1.1.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Html.Abstractions.1.1.2\lib\netstandard1.0\Microsoft.AspNetCore.Html.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Http, Version=1.1.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Http.1.1.2\lib\net451\Microsoft.AspNetCore.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Http.Abstractions, Version=1.1.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Http.Abstractions.1.1.2\lib\net451\Microsoft.AspNetCore.Http.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Http.Extensions, Version=1.1.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Http.Extensions.1.1.2\lib\net451\Microsoft.AspNetCore.Http.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Http.Features, Version=1.1.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Http.Features.1.1.2\lib\net451\Microsoft.AspNetCore.Http.Features.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.JsonPatch, Version=1.1.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.JsonPatch.1.1.2\lib\net451\Microsoft.AspNetCore.JsonPatch.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Localization, Version=1.1.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Localization.1.1.2\lib\net451\Microsoft.AspNetCore.Localization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Mvc, Version=1.1.3.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Mvc.1.1.3\lib\net451\Microsoft.AspNetCore.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Mvc.Abstractions, Version=1.1.3.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Mvc.Abstractions.1.1.3\lib\net451\Microsoft.AspNetCore.Mvc.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Mvc.ApiExplorer, Version=1.1.3.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Mvc.ApiExplorer.1.1.3\lib\net451\Microsoft.AspNetCore.Mvc.ApiExplorer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Mvc.Core, Version=1.1.3.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Mvc.Core.1.1.3\lib\net451\Microsoft.AspNetCore.Mvc.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Mvc.Cors, Version=1.1.3.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Mvc.Cors.1.1.3\lib\net451\Microsoft.AspNetCore.Mvc.Cors.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Mvc.DataAnnotations, Version=1.1.3.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Mvc.DataAnnotations.1.1.3\lib\net451\Microsoft.AspNetCore.Mvc.DataAnnotations.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Mvc.Formatters.Json, Version=1.1.3.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Mvc.Formatters.Json.1.1.3\lib\net451\Microsoft.AspNetCore.Mvc.Formatters.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Mvc.Localization, Version=1.1.3.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Mvc.Localization.1.1.3\lib\net451\Microsoft.AspNetCore.Mvc.Localization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Mvc.Razor, Version=1.1.3.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Mvc.Razor.1.1.3\lib\net451\Microsoft.AspNetCore.Mvc.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Mvc.Razor.Host, Version=1.1.3.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Mvc.Razor.Host.1.1.3\lib\net451\Microsoft.AspNetCore.Mvc.Razor.Host.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Mvc.TagHelpers, Version=1.1.3.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Mvc.TagHelpers.1.1.3\lib\net451\Microsoft.AspNetCore.Mvc.TagHelpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Mvc.ViewFeatures, Version=1.1.3.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Mvc.ViewFeatures.1.1.3\lib\net451\Microsoft.AspNetCore.Mvc.ViewFeatures.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Razor, Version=1.1.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Razor.1.1.2\lib\net451\Microsoft.AspNetCore.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Razor.Runtime, Version=1.1.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Razor.Runtime.1.1.2\lib\net451\Microsoft.AspNetCore.Razor.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.ResponseCaching.Abstractions, Version=1.1.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.ResponseCaching.Abstractions.1.1.2\lib\net451\Microsoft.AspNetCore.ResponseCaching.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Routing, Version=1.1.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Routing.1.1.2\lib\net451\Microsoft.AspNetCore.Routing.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Routing.Abstractions, Version=1.1.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Routing.Abstractions.1.1.2\lib\net451\Microsoft.AspNetCore.Routing.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.WebUtilities, Version=1.1.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.WebUtilities.1.1.2\lib\net451\Microsoft.AspNetCore.WebUtilities.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeAnalysis, Version=1.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeAnalysis.Common.1.3.0\lib\net45\Microsoft.CodeAnalysis.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeAnalysis.CSharp, Version=1.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeAnalysis.CSharp.1.3.0\lib\net45\Microsoft.CodeAnalysis.CSharp.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.DotNet.PlatformAbstractions, Version=1.1.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.DotNet.PlatformAbstractions.1.1.2\lib\net451\Microsoft.DotNet.PlatformAbstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Caching.Abstractions, Version=1.1.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Caching.Abstractions.1.1.2\lib\netstandard1.0\Microsoft.Extensions.Caching.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Caching.Memory, Version=1.1.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Caching.Memory.1.1.2\lib\net451\Microsoft.Extensions.Caching.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration.Abstractions, Version=1.1.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Configuration.Abstractions.1.1.2\lib\netstandard1.0\Microsoft.Extensions.Configuration.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection, Version=1.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.1.1.1\lib\netstandard1.1\Microsoft.Extensions.DependencyInjection.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=1.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.Abstractions.1.1.1\lib\netstandard1.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyModel, Version=1.1.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyModel.1.1.2\lib\net451\Microsoft.Extensions.DependencyModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.FileProviders.Abstractions, Version=1.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.FileProviders.Abstractions.1.1.1\lib\netstandard1.0\Microsoft.Extensions.FileProviders.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.FileProviders.Composite, Version=1.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.FileProviders.Composite.1.1.1\lib\netstandard1.0\Microsoft.Extensions.FileProviders.Composite.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.FileProviders.Physical, Version=1.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.FileProviders.Physical.1.1.1\lib\net451\Microsoft.Extensions.FileProviders.Physical.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.FileSystemGlobbing, Version=1.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.FileSystemGlobbing.1.1.1\lib\net45\Microsoft.Extensions.FileSystemGlobbing.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Globalization.CultureInfoCache, Version=1.1.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Globalization.CultureInfoCache.1.1.2\lib\netstandard1.1\Microsoft.Extensions.Globalization.CultureInfoCache.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Localization, Version=1.1.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Localization.1.1.2\lib\net451\Microsoft.Extensions.Localization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Localization.Abstractions, Version=1.1.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Localization.Abstractions.1.1.2\lib\netstandard1.0\Microsoft.Extensions.Localization.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging.Abstractions, Version=1.1.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Logging.Abstractions.1.1.2\lib\netstandard1.1\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.ObjectPool, Version=1.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.ObjectPool.1.1.1\lib\net451\Microsoft.Extensions.ObjectPool.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Options, Version=1.1.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Options.1.1.2\lib\netstandard1.0\Microsoft.Extensions.Options.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.PlatformAbstractions, Version=1.1.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.PlatformAbstractions.1.1.0\lib\net451\Microsoft.Extensions.PlatformAbstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Primitives, Version=1.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Primitives.1.1.1\lib\netstandard1.0\Microsoft.Extensions.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.WebEncoders, Version=1.1.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.WebEncoders.1.1.2\lib\netstandard1.0\Microsoft.Extensions.WebEncoders.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Net.Http.Headers, Version=1.1.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Net.Http.Headers.1.1.2\lib\netstandard1.1\Microsoft.Net.Http.Headers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Win32.Primitives, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Win32.Primitives.4.3.0\lib\net46\Microsoft.Win32.Primitives.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.AppContext, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.AppContext.4.3.0\lib\net46\System.AppContext.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Buffers, Version=4.0.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.3.0\lib\netstandard1.1\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Immutable, Version=1.2.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Collections.Immutable.1.2.0\lib\portable-net45+win8+wp8+wpa81\System.Collections.Immutable.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Console, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Console.4.3.0\lib\net46\System.Console.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Data" />
+    <Reference Include="System.Diagnostics.FileVersionInfo, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Diagnostics.FileVersionInfo.4.0.0\lib\net46\System.Diagnostics.FileVersionInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.StackTrace, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Diagnostics.StackTrace.4.0.1\lib\net46\System.Diagnostics.StackTrace.dll</HintPath>
+    </Reference>
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Globalization.Calendars, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Globalization.Calendars.4.3.0\lib\net46\System.Globalization.Calendars.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression, Version=4.1.2.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.Compression.4.3.0\lib\net46\System.IO.Compression.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.IO.Compression.ZipFile, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.Compression.ZipFile.4.3.0\lib\net46\System.IO.Compression.ZipFile.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.FileSystem.4.3.0\lib\net46\System.IO.FileSystem.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.Primitives, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.FileSystem.Primitives.4.3.0\lib\net46\System.IO.FileSystem.Primitives.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Net.Http.4.3.0\lib\net46\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Sockets, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Net.Sockets.4.3.0\lib\net46\System.Net.Sockets.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Reflection.Metadata, Version=1.3.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Reflection.Metadata.1.3.0\lib\portable-net45+win8\System.Reflection.Metadata.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.3.0\lib\netstandard1.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\lib\net45\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security" />
+    <Reference Include="System.Security.Cryptography.Algorithms, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Algorithms.4.3.0\lib\net461\System.Security.Cryptography.Algorithms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Encoding, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Encoding.4.3.0\lib\net46\System.Security.Cryptography.Encoding.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Primitives, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Primitives.4.3.0\lib\net46\System.Security.Cryptography.Primitives.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.X509Certificates, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.X509Certificates.4.3.0\lib\net461\System.Security.Cryptography.X509Certificates.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encoding.CodePages, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Encoding.CodePages.4.0.1\lib\net46\System.Text.Encoding.CodePages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encodings.Web, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Encodings.Web.4.3.1\lib\netstandard1.0\System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Thread, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Thread.4.0.0\lib\net46\System.Threading.Thread.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -78,8 +338,6 @@
     <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <Private>True</Private>
       <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Net.Http">
     </Reference>
     <Reference Include="System.Net.Http.WebRequest">
     </Reference>
@@ -108,6 +366,19 @@
     </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>..\packages\Newtonsoft.Json.11.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.ReaderWriter, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Xml.ReaderWriter.4.3.0\lib\net46\System.Xml.ReaderWriter.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.XmlDocument, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Xml.XmlDocument.4.0.1\lib\net46\System.Xml.XmlDocument.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XPath, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Xml.XPath.4.0.1\lib\net46\System.Xml.XPath.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XPath.XDocument, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Xml.XPath.XDocument.4.0.1\lib\net46\System.Xml.XPath.XDocument.dll</HintPath>
     </Reference>
     <Reference Include="WebGrease">
       <Private>True</Private>
@@ -154,7 +425,6 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\PersonaController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -162,6 +432,10 @@
     <Compile Include="Migrations\201904012341389_intial.cs" />
     <Compile Include="Migrations\201904012341389_intial.Designer.cs">
       <DependentUpon>201904012341389_intial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904021657581_initial.cs" />
+    <Compile Include="Migrations\201904021657581_initial.Designer.cs">
+      <DependentUpon>201904021657581_initial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Candidato.cs" />
@@ -177,6 +451,7 @@
     <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\CandidatoViewModel.cs" />
     <Compile Include="ViewModels\PersonaViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -327,7 +602,770 @@
     <Content Include="obj\Debug\Proyecto-INE.csproj.GenerateResource.cache" />
     <Content Include="obj\Debug\Proyecto-INE.csproj.CopyComplete" />
     <Content Include="obj\Debug\Tsc.out" />
+    <Content Include="Scripts\highcharts\6.2.0\css\highcharts.css" />
+    <Content Include="Scripts\highcharts\6.2.0\css\themes\dark-unica.css" />
+    <Content Include="Scripts\highcharts\6.2.0\css\themes\grid-light.css" />
+    <Content Include="Scripts\highcharts\6.2.0\css\themes\sand-signika.css" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\error.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\masters\highcharts-3d.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\masters\highcharts-more.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\masters\highcharts.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\masters\modules\accessibility.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\masters\modules\annotations.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\masters\modules\arrow-symbols.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\masters\modules\boost-canvas.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\masters\modules\boost.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\masters\modules\broken-axis.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\masters\modules\bullet.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\masters\modules\current-date-indicator.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\masters\modules\data.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\masters\modules\drag-panes.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\masters\modules\draggable-points.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\masters\modules\drilldown.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\masters\modules\export-data.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\masters\modules\exporting.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\masters\modules\funnel.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\masters\modules\gantt.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\masters\modules\grid-axis.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\masters\modules\heatmap.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\masters\modules\histogram-bellcurve.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\masters\modules\item-series.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\masters\modules\no-data-to-display.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\masters\modules\offline-exporting.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\masters\modules\oldie.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\masters\modules\overlapping-datalabels.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\masters\modules\parallel-coordinates.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\masters\modules\pareto.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\masters\modules\pathfinder.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\masters\modules\pattern-fill.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\masters\modules\sankey.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\masters\modules\series-label.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\masters\modules\solid-gauge.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\masters\modules\static-scale.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\masters\modules\stock.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\masters\modules\streamgraph.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\masters\modules\sunburst.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\masters\modules\tilemap.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\masters\modules\treegrid.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\masters\modules\treemap.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\masters\modules\variable-pie.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\masters\modules\variwide.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\masters\modules\vector.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\masters\modules\windbarb.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\masters\modules\wordcloud.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\masters\modules\xrange.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\masters\themes\avocado.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\masters\themes\avocado.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\masters\themes\dark-blue.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\masters\themes\dark-green.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\masters\themes\dark-unica.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\masters\themes\gray.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\masters\themes\grid-light.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\masters\themes\grid.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\masters\themes\sand-signika.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\masters\themes\skies.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\masters\themes\sunset.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\masters\themes\sunset.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\mixins\ajax.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\mixins\centered-series.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\mixins\derived-series.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\mixins\draw-point.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\mixins\on-series.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\mixins\polygon.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\mixins\tree-series.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\modules\a11y-i18n.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\modules\annotations.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\modules\bellcurve.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\modules\boost-canvas.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\modules\boost.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\modules\broken-axis.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\modules\bullet.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\modules\data.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\modules\drag-panes.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\modules\draggable-points.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\modules\drilldown.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\modules\export-data.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\modules\exporting.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\modules\funnel.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\modules\histogram.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\modules\item-series.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\modules\keyboard-navigation.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\modules\no-data-to-display.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\modules\offline-exporting.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\modules\oldie.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\modules\overlapping-datalabels.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\modules\parallel-coordinates.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\modules\pareto.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\modules\pattern-fill.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\modules\sankey.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\modules\screen-reader.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\modules\series-label.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\modules\solid-gauge.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\modules\static-scale.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\modules\streamgraph.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\modules\sunburst.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\modules\tilemap.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\modules\treemap.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\modules\variable-pie.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\modules\variwide.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\modules\vector.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\modules\windbarb.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\modules\wordcloud.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\modules\xrange.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\parts-3d\Axis.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\parts-3d\Chart.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\parts-3d\Column.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\parts-3d\Globals.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\parts-3d\Math.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\parts-3d\Pie.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\parts-3d\Scatter.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\parts-3d\Series.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\parts-3d\SVGRenderer.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\parts-3d\VMLRenderer.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\parts-gantt\ArrowSymbols.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\parts-gantt\CurrentDateIndicator.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\parts-gantt\GanttChart.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\parts-gantt\GanttSeries.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\parts-gantt\GridAxis.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\parts-gantt\Pathfinder.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\parts-gantt\PathfinderAlgorithms.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\parts-gantt\Tree.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\parts-gantt\TreeGrid.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\parts-map\ColorAxis.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\parts-map\ColorSeriesMixin.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\parts-map\GeoJSON.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\parts-map\HeatmapSeries.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\parts-map\Map.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\parts-map\MapAxis.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\parts-map\MapBubbleSeries.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\parts-map\MapLineSeries.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\parts-map\MapNavigation.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\parts-map\MapPointer.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\parts-map\MapPointSeries.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\parts-map\MapSeries.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\parts-more\AreaRangeSeries.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\parts-more\AreaSplineRangeSeries.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\parts-more\BoxPlotSeries.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\parts-more\BubbleSeries.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\parts-more\ColumnRangeSeries.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\parts-more\ErrorBarSeries.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\parts-more\GaugeSeries.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\parts-more\Pane.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\parts-more\Polar.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\parts-more\PolygonSeries.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\parts-more\RadialAxis.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\parts-more\WaterfallSeries.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\parts.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\parts\AreaSeries.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\parts\AreaSplineSeries.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\parts\Axis.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\parts\BarSeries.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\parts\CandlestickSeries.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\parts\Chart.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\parts\Color.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\parts\ColumnSeries.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\parts\DataGrouping.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\parts\DataLabels.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\parts\DateTimeAxis.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\parts\Dynamics.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\parts\FlagsSeries.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\parts\Globals.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\parts\Html.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\parts\Interaction.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\parts\Legend.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\parts\LogarithmicAxis.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\parts\MSPointer.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\parts\Navigator.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\parts\OHLCSeries.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\parts\Options.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\parts\OrdinalAxis.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\parts\PieSeries.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\parts\PlotBandSeries.experimental.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\parts\PlotLineOrBand.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\parts\Point.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\parts\Pointer.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\parts\RangeSelector.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\parts\Responsive.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\parts\ScatterSeries.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\parts\ScrollablePlotArea.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\parts\Scrollbar.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\parts\Series.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\parts\SplineSeries.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\parts\Stacking.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\parts\StockChart.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\parts\SvgRenderer.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\parts\Tick.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\parts\Time.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\parts\Tooltip.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\parts\TouchPointer.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\parts\Utilities.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\supplemental.docs.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\themes\avocado.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\themes\dark-blue.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\themes\dark-green.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\themes\dark-unica.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\themes\gray.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\themes\grid-light.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\themes\grid.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\themes\sand-signika.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\themes\skies.js" />
+    <Content Include="Scripts\highcharts\6.2.0\es-modules\themes\sunset.js" />
+    <Content Include="Scripts\highcharts\6.2.0\highcharts-3d.js" />
+    <Content Include="Scripts\highcharts\6.2.0\highcharts-3d.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\highcharts-more.js" />
+    <Content Include="Scripts\highcharts\6.2.0\highcharts-more.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\highcharts.js" />
+    <Content Include="Scripts\highcharts\6.2.0\highcharts.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\error.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\masters\highcharts-3d.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\masters\highcharts-more.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\masters\highcharts.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\masters\modules\accessibility.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\masters\modules\annotations.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\masters\modules\arrow-symbols.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\masters\modules\boost-canvas.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\masters\modules\boost.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\masters\modules\broken-axis.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\masters\modules\bullet.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\masters\modules\current-date-indicator.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\masters\modules\data.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\masters\modules\drag-panes.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\masters\modules\draggable-points.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\masters\modules\drilldown.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\masters\modules\export-data.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\masters\modules\exporting.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\masters\modules\funnel.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\masters\modules\gantt.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\masters\modules\grid-axis.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\masters\modules\heatmap.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\masters\modules\histogram-bellcurve.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\masters\modules\item-series.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\masters\modules\no-data-to-display.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\masters\modules\offline-exporting.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\masters\modules\oldie.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\masters\modules\overlapping-datalabels.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\masters\modules\parallel-coordinates.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\masters\modules\pareto.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\masters\modules\pathfinder.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\masters\modules\pattern-fill.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\masters\modules\sankey.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\masters\modules\series-label.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\masters\modules\solid-gauge.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\masters\modules\static-scale.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\masters\modules\stock.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\masters\modules\streamgraph.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\masters\modules\sunburst.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\masters\modules\tilemap.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\masters\modules\treegrid.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\masters\modules\treemap.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\masters\modules\variable-pie.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\masters\modules\variwide.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\masters\modules\vector.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\masters\modules\windbarb.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\masters\modules\wordcloud.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\masters\modules\xrange.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\masters\themes\avocado.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\masters\themes\avocado.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\masters\themes\dark-blue.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\masters\themes\dark-green.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\masters\themes\dark-unica.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\masters\themes\gray.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\masters\themes\grid-light.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\masters\themes\grid.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\masters\themes\sand-signika.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\masters\themes\skies.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\masters\themes\sunset.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\masters\themes\sunset.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\mixins\ajax.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\mixins\centered-series.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\mixins\derived-series.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\mixins\draw-point.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\mixins\on-series.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\mixins\polygon.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\mixins\tree-series.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\modules\a11y-i18n.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\modules\annotations.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\modules\bellcurve.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\modules\boost-canvas.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\modules\boost.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\modules\broken-axis.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\modules\bullet.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\modules\data.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\modules\drag-panes.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\modules\draggable-points.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\modules\drilldown.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\modules\export-data.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\modules\exporting.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\modules\funnel.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\modules\histogram.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\modules\item-series.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\modules\keyboard-navigation.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\modules\no-data-to-display.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\modules\offline-exporting.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\modules\oldie.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\modules\overlapping-datalabels.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\modules\parallel-coordinates.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\modules\pareto.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\modules\pattern-fill.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\modules\sankey.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\modules\screen-reader.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\modules\series-label.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\modules\solid-gauge.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\modules\static-scale.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\modules\streamgraph.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\modules\sunburst.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\modules\tilemap.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\modules\treemap.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\modules\variable-pie.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\modules\variwide.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\modules\vector.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\modules\windbarb.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\modules\wordcloud.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\modules\xrange.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\parts-3d\Axis.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\parts-3d\Chart.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\parts-3d\Column.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\parts-3d\Globals.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\parts-3d\Math.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\parts-3d\Pie.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\parts-3d\Scatter.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\parts-3d\Series.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\parts-3d\SVGRenderer.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\parts-3d\VMLRenderer.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\parts-gantt\ArrowSymbols.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\parts-gantt\CurrentDateIndicator.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\parts-gantt\GanttChart.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\parts-gantt\GanttSeries.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\parts-gantt\GridAxis.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\parts-gantt\Pathfinder.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\parts-gantt\PathfinderAlgorithms.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\parts-gantt\Tree.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\parts-gantt\TreeGrid.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\parts-map\ColorAxis.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\parts-map\ColorSeriesMixin.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\parts-map\GeoJSON.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\parts-map\HeatmapSeries.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\parts-map\Map.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\parts-map\MapAxis.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\parts-map\MapBubbleSeries.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\parts-map\MapLineSeries.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\parts-map\MapNavigation.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\parts-map\MapPointer.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\parts-map\MapPointSeries.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\parts-map\MapSeries.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\parts-more\AreaRangeSeries.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\parts-more\AreaSplineRangeSeries.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\parts-more\BoxPlotSeries.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\parts-more\BubbleSeries.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\parts-more\ColumnRangeSeries.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\parts-more\ErrorBarSeries.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\parts-more\GaugeSeries.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\parts-more\Pane.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\parts-more\Polar.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\parts-more\PolygonSeries.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\parts-more\RadialAxis.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\parts-more\WaterfallSeries.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\parts.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\parts\AreaSeries.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\parts\AreaSplineSeries.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\parts\Axis.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\parts\BarSeries.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\parts\CandlestickSeries.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\parts\Chart.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\parts\Color.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\parts\ColumnSeries.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\parts\DataGrouping.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\parts\DataLabels.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\parts\DateTimeAxis.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\parts\Dynamics.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\parts\FlagsSeries.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\parts\Globals.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\parts\Html.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\parts\Interaction.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\parts\Legend.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\parts\LogarithmicAxis.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\parts\MSPointer.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\parts\Navigator.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\parts\OHLCSeries.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\parts\Options.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\parts\OrdinalAxis.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\parts\PieSeries.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\parts\PlotBandSeries.experimental.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\parts\PlotLineOrBand.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\parts\Point.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\parts\Pointer.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\parts\RangeSelector.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\parts\Responsive.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\parts\ScatterSeries.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\parts\ScrollablePlotArea.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\parts\Scrollbar.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\parts\Series.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\parts\SplineSeries.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\parts\Stacking.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\parts\StockChart.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\parts\SvgRenderer.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\parts\Tick.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\parts\Time.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\parts\Tooltip.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\parts\TouchPointer.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\parts\Utilities.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\supplemental.docs.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\themes\avocado.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\themes\dark-blue.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\themes\dark-green.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\themes\dark-unica.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\themes\gray.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\themes\grid-light.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\themes\grid.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\themes\sand-signika.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\themes\skies.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\es-modules\themes\sunset.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\highcharts-3d.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\highcharts-3d.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\highcharts-more.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\highcharts-more.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\highcharts.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\highcharts.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\accessibility.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\accessibility.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\annotations.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\annotations.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\arrow-symbols.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\arrow-symbols.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\boost-canvas.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\boost-canvas.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\boost.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\boost.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\broken-axis.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\broken-axis.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\bullet.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\bullet.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\current-date-indicator.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\current-date-indicator.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\data.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\data.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\drag-panes.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\drag-panes.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\draggable-points.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\draggable-points.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\drilldown.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\drilldown.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\export-data.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\export-data.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\exporting.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\exporting.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\funnel.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\funnel.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\gantt.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\gantt.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\grid-axis.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\grid-axis.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\heatmap.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\heatmap.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\histogram-bellcurve.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\histogram-bellcurve.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\item-series.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\item-series.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\no-data-to-display.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\no-data-to-display.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\offline-exporting.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\offline-exporting.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\oldie.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\oldie.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\overlapping-datalabels.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\overlapping-datalabels.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\parallel-coordinates.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\parallel-coordinates.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\pareto.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\pareto.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\pathfinder.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\pathfinder.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\pattern-fill.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\pattern-fill.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\sankey.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\sankey.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\series-label.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\series-label.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\solid-gauge.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\solid-gauge.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\static-scale.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\static-scale.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\stock.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\stock.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\streamgraph.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\streamgraph.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\sunburst.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\sunburst.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\tilemap.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\tilemap.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\treegrid.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\treegrid.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\treemap.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\treemap.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\variable-pie.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\variable-pie.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\variwide.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\variwide.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\vector.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\vector.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\windbarb.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\windbarb.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\wordcloud.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\wordcloud.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\xrange.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\xrange.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\themes\avocado.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\themes\avocado.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\themes\dark-blue.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\themes\dark-blue.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\themes\dark-green.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\themes\dark-green.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\themes\dark-unica.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\themes\dark-unica.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\themes\gray.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\themes\gray.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\themes\grid-light.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\themes\grid-light.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\themes\grid.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\themes\grid.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\themes\sand-signika.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\themes\sand-signika.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\themes\skies.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\themes\skies.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\themes\sunset.js" />
+    <Content Include="Scripts\highcharts\6.2.0\js\themes\sunset.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\lib\canvg.js" />
+    <Content Include="Scripts\highcharts\6.2.0\lib\canvg.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\lib\jspdf.js" />
+    <Content Include="Scripts\highcharts\6.2.0\lib\jspdf.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\lib\rgbcolor.js" />
+    <Content Include="Scripts\highcharts\6.2.0\lib\rgbcolor.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\lib\svg2pdf.js" />
+    <Content Include="Scripts\highcharts\6.2.0\lib\svg2pdf.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\accessibility.js" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\accessibility.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\annotations.js" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\annotations.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\arrow-symbols.js" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\arrow-symbols.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\boost-canvas.js" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\boost-canvas.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\boost.js" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\boost.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\broken-axis.js" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\broken-axis.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\bullet.js" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\bullet.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\current-date-indicator.js" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\current-date-indicator.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\data.js" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\data.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\drag-panes.js" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\drag-panes.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\draggable-points.js" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\draggable-points.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\drilldown.js" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\drilldown.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\export-data.js" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\export-data.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\exporting.js" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\exporting.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\funnel.js" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\funnel.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\gantt.js" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\gantt.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\grid-axis.js" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\grid-axis.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\heatmap.js" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\heatmap.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\histogram-bellcurve.js" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\histogram-bellcurve.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\item-series.js" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\item-series.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\no-data-to-display.js" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\no-data-to-display.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\offline-exporting.js" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\offline-exporting.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\oldie.js" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\oldie.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\overlapping-datalabels.js" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\overlapping-datalabels.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\parallel-coordinates.js" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\parallel-coordinates.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\pareto.js" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\pareto.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\pathfinder.js" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\pathfinder.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\pattern-fill.js" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\pattern-fill.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\sankey.js" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\sankey.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\series-label.js" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\series-label.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\solid-gauge.js" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\solid-gauge.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\static-scale.js" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\static-scale.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\stock.js" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\stock.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\streamgraph.js" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\streamgraph.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\sunburst.js" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\sunburst.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\tilemap.js" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\tilemap.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\treegrid.js" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\treegrid.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\treemap.js" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\treemap.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\variable-pie.js" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\variable-pie.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\variwide.js" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\variwide.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\vector.js" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\vector.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\windbarb.js" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\windbarb.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\wordcloud.js" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\wordcloud.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\xrange.js" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\xrange.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\themes\avocado.js" />
+    <Content Include="Scripts\highcharts\6.2.0\themes\avocado.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\themes\dark-blue.js" />
+    <Content Include="Scripts\highcharts\6.2.0\themes\dark-blue.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\themes\dark-green.js" />
+    <Content Include="Scripts\highcharts\6.2.0\themes\dark-green.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\themes\dark-unica.js" />
+    <Content Include="Scripts\highcharts\6.2.0\themes\dark-unica.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\themes\gray.js" />
+    <Content Include="Scripts\highcharts\6.2.0\themes\gray.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\themes\grid-light.js" />
+    <Content Include="Scripts\highcharts\6.2.0\themes\grid-light.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\themes\grid.js" />
+    <Content Include="Scripts\highcharts\6.2.0\themes\grid.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\themes\sand-signika.js" />
+    <Content Include="Scripts\highcharts\6.2.0\themes\sand-signika.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\themes\skies.js" />
+    <Content Include="Scripts\highcharts\6.2.0\themes\skies.src.js" />
+    <Content Include="Scripts\highcharts\6.2.0\themes\sunset.js" />
+    <Content Include="Scripts\highcharts\6.2.0\themes\sunset.js.map" />
+    <Content Include="Scripts\highcharts\6.2.0\themes\skies.js.map" />
+    <Content Include="Scripts\highcharts\6.2.0\themes\sand-signika.js.map" />
+    <Content Include="Scripts\highcharts\6.2.0\themes\grid.js.map" />
+    <Content Include="Scripts\highcharts\6.2.0\themes\grid-light.js.map" />
+    <Content Include="Scripts\highcharts\6.2.0\themes\gray.js.map" />
+    <Content Include="Scripts\highcharts\6.2.0\themes\dark-unica.js.map" />
+    <Content Include="Scripts\highcharts\6.2.0\themes\dark-green.js.map" />
+    <Content Include="Scripts\highcharts\6.2.0\themes\dark-blue.js.map" />
+    <Content Include="Scripts\highcharts\6.2.0\themes\avocado.js.map" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\xrange.js.map" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\wordcloud.js.map" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\windbarb.js.map" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\vector.js.map" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\variwide.js.map" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\variable-pie.js.map" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\treemap.js.map" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\treegrid.js.map" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\tilemap.js.map" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\sunburst.js.map" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\streamgraph.js.map" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\stock.js.map" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\static-scale.js.map" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\solid-gauge.js.map" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\series-label.js.map" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\sankey.js.map" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\pattern-fill.js.map" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\pathfinder.js.map" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\pareto.js.map" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\parallel-coordinates.js.map" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\overlapping-datalabels.js.map" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\oldie.js.map" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\offline-exporting.js.map" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\no-data-to-display.js.map" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\item-series.js.map" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\histogram-bellcurve.js.map" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\heatmap.js.map" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\grid-axis.js.map" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\gantt.js.map" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\funnel.js.map" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\exporting.js.map" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\export-data.js.map" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\drilldown.js.map" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\draggable-points.js.map" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\drag-panes.js.map" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\data.js.map" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\current-date-indicator.js.map" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\bullet.js.map" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\broken-axis.js.map" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\boost.js.map" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\boost-canvas.js.map" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\arrow-symbols.js.map" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\annotations.js.map" />
+    <Content Include="Scripts\highcharts\6.2.0\modules\accessibility.js.map" />
+    <Content Include="Scripts\highcharts\6.2.0\js\themes\sunset.js.map" />
+    <Content Include="Scripts\highcharts\6.2.0\js\themes\skies.js.map" />
+    <Content Include="Scripts\highcharts\6.2.0\js\themes\sand-signika.js.map" />
+    <Content Include="Scripts\highcharts\6.2.0\js\themes\grid.js.map" />
+    <Content Include="Scripts\highcharts\6.2.0\js\themes\grid-light.js.map" />
+    <Content Include="Scripts\highcharts\6.2.0\js\themes\gray.js.map" />
+    <Content Include="Scripts\highcharts\6.2.0\js\themes\dark-unica.js.map" />
+    <Content Include="Scripts\highcharts\6.2.0\js\themes\dark-green.js.map" />
+    <Content Include="Scripts\highcharts\6.2.0\js\themes\dark-blue.js.map" />
+    <Content Include="Scripts\highcharts\6.2.0\js\themes\avocado.js.map" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\xrange.js.map" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\wordcloud.js.map" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\windbarb.js.map" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\vector.js.map" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\variwide.js.map" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\variable-pie.js.map" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\treemap.js.map" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\treegrid.js.map" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\tilemap.js.map" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\sunburst.js.map" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\streamgraph.js.map" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\stock.js.map" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\static-scale.js.map" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\solid-gauge.js.map" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\series-label.js.map" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\sankey.js.map" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\pattern-fill.js.map" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\pathfinder.js.map" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\pareto.js.map" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\parallel-coordinates.js.map" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\overlapping-datalabels.js.map" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\oldie.js.map" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\offline-exporting.js.map" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\no-data-to-display.js.map" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\item-series.js.map" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\histogram-bellcurve.js.map" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\heatmap.js.map" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\grid-axis.js.map" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\gantt.js.map" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\funnel.js.map" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\exporting.js.map" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\export-data.js.map" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\drilldown.js.map" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\draggable-points.js.map" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\drag-panes.js.map" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\data.js.map" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\current-date-indicator.js.map" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\bullet.js.map" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\broken-axis.js.map" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\boost.js.map" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\boost-canvas.js.map" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\arrow-symbols.js.map" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\annotations.js.map" />
+    <Content Include="Scripts\highcharts\6.2.0\js\modules\accessibility.js.map" />
+    <Content Include="Scripts\highcharts\6.2.0\js\highcharts.js.map" />
+    <Content Include="Scripts\highcharts\6.2.0\js\highcharts-more.js.map" />
+    <Content Include="Scripts\highcharts\6.2.0\js\highcharts-3d.js.map" />
+    <Content Include="Scripts\highcharts\6.2.0\highcharts.js.map" />
+    <Content Include="Scripts\highcharts\6.2.0\highcharts-more.js.map" />
+    <Content Include="Scripts\highcharts\6.2.0\highcharts-3d.js.map" />
+    <Content Include="Scripts\highcharts\6.2.0\css\highcharts.scss" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
+    <Content Include="Scripts\highcharts\6.2.0\themes\sunset.src.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
     <Content Include="Scripts\jquery-3.3.1.slim.js" />
@@ -355,11 +1393,7 @@
     </Content>
     <Content Include="Views\Web.config" />
     <Content Include="Views\_ViewStart.cshtml" />
-    <Content Include="Views\Shared\Error.cshtml" />
-    <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
-    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Persona\Index.cshtml" />
     <Content Include="Scripts\umd\popper.min.js.map" />
     <Content Include="Scripts\umd\popper.js.map" />
     <Content Include="Scripts\umd\popper-utils.min.js.map" />
@@ -373,11 +1407,11 @@
     <Content Include="Views\Persona\Login.cshtml" />
     <Content Include="Views\Persona\Normas.cshtml" />
     <Content Include="Views\Persona\Usuario.cshtml" />
-    <Content Include="Views\Persona\Apodaca.cshtml" />
-    <Content Include="Views\Persona\Monterrey.cshtml" />
-    <Content Include="Views\Persona\Pesqueria.cshtml" />
-    <Content Include="Views\Persona\Escobedo.cshtml" />
-    <Content Include="Views\Persona\Sannico.cshtml" />
+    <Content Include="Views\Boletas\Apodaca.cshtml" />
+    <Content Include="Views\Boletas\Monterrey.cshtml" />
+    <Content Include="Views\Boletas\Pesqueria.cshtml" />
+    <Content Include="Views\Boletas\Escobedo.cshtml" />
+    <Content Include="Views\Persona\CC.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -398,7 +1432,14 @@
     <EmbeddedResource Include="Migrations\201904012341389_intial.resx">
       <DependentUpon>201904012341389_intial.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904021657581_initial.resx">
+      <DependentUpon>201904021657581_initial.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="obj\Debug\Proyecto_INE.Migrations.intial.resources" />
+  </ItemGroup>
+  <ItemGroup>
+    <Analyzer Include="..\packages\Microsoft.CodeAnalysis.Analyzers.1.1.0\analyzers\dotnet\cs\Microsoft.CodeAnalysis.Analyzers.dll" />
+    <Analyzer Include="..\packages\Microsoft.CodeAnalysis.Analyzers.1.1.0\analyzers\dotnet\cs\Microsoft.CodeAnalysis.CSharp.Analyzers.dll" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

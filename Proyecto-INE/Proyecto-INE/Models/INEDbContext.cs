@@ -19,6 +19,10 @@ namespace Proyecto_INE.Models
         public DbSet<Municipio> Municipios { get; set; }
         public DbSet<Estado> Estados { get; set; }
         public DbSet<Persona> Personas { get; set; }
+        public DbSet<PartidoPolitico> PartidoPoliticos{get; set;}
+        public DbSet<Puesto> Puestos { get; set; }
+        public DbSet<Voto> Votos { get; set; }
+
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
