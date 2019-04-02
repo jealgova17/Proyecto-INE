@@ -90,5 +90,37 @@ namespace Proyecto_INE.Controllers
             return View();
         }
 
+        public ActionResult Apodaca()
+        {
+
+            return View();
+        }
+
+        public ActionResult Monterrey()
+        {
+
+            return View();
+        }
+
+        public ActionResult Pesqueria()
+        {
+
+            return View();
+        }
+
+        public ActionResult Sannico()
+        {
+
+            return View();
+        }
+
+        public ActionResult Escobedo()
+        {
+
+            return View();
+        }
+
+
+
     }
 }
