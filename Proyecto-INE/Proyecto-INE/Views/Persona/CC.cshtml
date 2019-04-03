@@ -8,112 +8,211 @@
 
 <html>
 <head>
-    <meta name="viewport" content="width=device-width" />
-    <title>CC</title>
+    <link rel="shortcut icon" href="~/Images/inne.ico">
+
+    <link rel="shortcut icon" href="inne.ico" />
+    <script language="JavaScript">
+        var txt = "Instituto Nacional Electoral-INE-";
+        var espera = 75;
+        var refresco = null;
+        function rotulo_title() {
+            document.title = txt;
+            txt = txt.substring(1, txt.length) + txt.charAt(0);
+            refresco = setTimeout("rotulo_title()", espera);
+        }
+        rotulo_title();
+    </script>
+    <link rel="stylesheet" type="text/css" href="~/css/apodaca.css" />
+
 </head>
 <body>
+
+    <div class="container">
+        <nav>
+            <input type="checkbox" id="nav" class="hidden">
+            <label for="nav" class="nav-btn">
+                <i></i>
+                <i></i>
+                <i></i>
+            </label>
+            <div class="logo">
+                <img src="~/Images/map.jpg" width="150px">
+            </div>
+            <div class="nav-wrapper">
+                <ul>
+                    <li><a href="@Url.Action("Index", "Persona")">Inicio</a></li>
+                    <li><a href="Candidatos.html">Candidatos</a></li>
+                    <li><a href="#">Estadisticas</a></li>
+                    <li><a href="@Url.Action("Login", "Persona")">Votar</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+
     @using (Html.BeginForm("Login", "Persona", FormMethod.Post))
     {
 
         List<Proyecto_INE.ViewModels.CandidatoViewModel> list1 = (List<Proyecto_INE.ViewModels.CandidatoViewModel>)Session["presi"];
+        List<Proyecto_INE.ViewModels.CandidatoViewModel> list11 = (List<Proyecto_INE.ViewModels.CandidatoViewModel>)Session["presi"];
         List<Proyecto_INE.ViewModels.CandidatoViewModel> list2 = (List<Proyecto_INE.ViewModels.CandidatoViewModel>)Session["gober"];
         List<Proyecto_INE.ViewModels.CandidatoViewModel> list3 = (List<Proyecto_INE.ViewModels.CandidatoViewModel>)Session["muni"];
 
-        <table class="table">
-            <tr>
-                <th>
-                    @Html.DisplayNameFor(model => model.NombreCandidato)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.ApellidoPaternoCandidato)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.ApellidoMaternoCandidato)
-                </th>
-                <th></th>
-            </tr>
+       
+            <div class="mySlides fade">
+                <table>
+                    <CAPTION>PROCESO ELECTORAL FEDERAL 2018-2019</CAPTION>
+                    <CAPTION>FEDERAL</CAPTION>
+                    <thead>
+                        <tr>
+                            <th>Partido</th>
+                            <th>Candidato</th>
+                            <th></th>
+                            <th>Votar</th>
 
-            @foreach (var item in list1)
-            {
-                <tr>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.NombreCandidato)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.ApellidoPaternoCandidato)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.ApellidoMaternoCandidato)
-                    </td>
+                        </tr>
+                    </thead>
 
-                </tr>
-            }
+                    @foreach (var item in list1)
+                    {
+                        <from action="">
 
-        </table>
+                            <tr>
+                                <td><img id="more" src="f/morena.jpg"></td>
+                                <td> @Html.DisplayFor(modelItem => item.NombreCandidato)  @Html.DisplayFor(modelItem => item.ApellidoPaternoCandidato)  @Html.DisplayFor(modelItem => item.ApellidoMaternoCandidato)</td>
+                                <td> <img id="esd" src="f/esdrasvot.jpg"></td>
+                                <td>
+                                        <input type="checkbox" >
+                                        <span class="checkmark"></span>
+                                </td>
+                            </tr>
 
-        <table class="table">
-            <tr>
-                <th>
-                    @Html.DisplayNameFor(model => model.NombreCandidato)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.ApellidoPaternoCandidato)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.ApellidoMaternoCandidato)
-                </th>
-                <th></th>
-            </tr>
+                        </from>
+                    }
 
-            @foreach (var item in list2)
-            {
-                <tr>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.NombreCandidato)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.ApellidoPaternoCandidato)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.ApellidoMaternoCandidato)
-                    </td>
+                </table>
 
-                </tr>
-            }
+            </div>
+            
 
-        </table>
+        
 
-        <table class="table">
-            <tr>
-                <th>
-                    @Html.DisplayNameFor(model => model.NombreCandidato)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.ApellidoPaternoCandidato)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.ApellidoMaternoCandidato)
-                </th>
-                <th></th>
-            </tr>
+        
+            <div class="mySlides fade">
+                <table>
+                    <CAPTION>PROCESO ELECTORAL FEDERAL 2018-2019</CAPTION>
+                    <CAPTION>FEDERAL</CAPTION>
+                    <thead>
+                        <tr>
+                            <th>Partido</th>
+                            <th>Candidato</th>
+                            <th></th>
+                            <th>Votar</th>
 
-            @foreach (var item in list3)
-            {
-                <tr>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.NombreCandidato)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.ApellidoPaternoCandidato)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.ApellidoMaternoCandidato)
-                    </td>
+                        </tr>
+                    </thead>
+                    @foreach (var item in list2)
+                    {
+                        <from action="">
 
-                </tr>
-            }
+                            <tr>
+                                <td><img id="more" src="f/morena.jpg"></td>
+                                <td> @Html.DisplayFor(modelItem => item.NombreCandidato)  @Html.DisplayFor(modelItem => item.ApellidoPaternoCandidato)  @Html.DisplayFor(modelItem => item.ApellidoMaternoCandidato)</td>
+                                <td> <img id="esd" src="f/esdrasvot.jpg"></td>
+                                <td>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </td>
+                            </tr>
 
-        </table>
+                        </from>
+                    }
+
+                </table>
+
+            </div>
+            
+
+        
+
+
+        
+            <div class="mySlides fade">
+                <table>
+                    <CAPTION>PROCESO ELECTORAL FEDERAL 2018-2019</CAPTION>
+                    <CAPTION>FEDERAL</CAPTION>
+                    <thead>
+                        <tr>
+                            <th>Partido</th>
+                            <th>Candidato</th>
+                            <th></th>
+                            <th>Votar</th>
+
+                        </tr>
+                    </thead>
+                    @foreach (var item in list3)
+                    {
+                        <from action="">
+
+                            <tr>
+                                <td><img id="more" src="f/morena.jpg"></td>
+                                <td> @Html.DisplayFor(modelItem => item.NombreCandidato)  @Html.DisplayFor(modelItem => item.ApellidoPaternoCandidato)  @Html.DisplayFor(modelItem => item.ApellidoMaternoCandidato)</td>
+                                <td> <img id="esd" src="f/esdrasvot.jpg"></td>
+                                <td>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </td>
+                            </tr>
+
+                        </from>
+                    }
+
+                </table>
+
+            </div>
+
+      
+
     }
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
 </body>
 </html>
