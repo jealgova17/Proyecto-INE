@@ -78,12 +78,12 @@
                         <from action="">
 
                             <tr>
-                                <td><img id="more" src="f/morena.jpg"></td>
+                                <td>  <img id="more" src="@Url.Content("~/PartidosPoliticos/"+item.PartidoPoliticoId+".jpg")" /></td>
                                 <td> @Html.DisplayFor(modelItem => item.NombreCandidato)  @Html.DisplayFor(modelItem => item.ApellidoPaternoCandidato)  @Html.DisplayFor(modelItem => item.ApellidoMaternoCandidato)</td>
-                                <td> <img id="esd" src="f/esdrasvot.jpg"></td>
+                                <td> <img   id="more" src="@Url.Content("~/Candidatos/"+item.NombreCandidato+".jpg")" /></td>
                                 <td>
-                                        <input type="checkbox" >
-                                        <span class="checkmark"></span>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
                                 </td>
                             </tr>
 
@@ -116,9 +116,9 @@
                         <from action="">
 
                             <tr>
-                                <td><img id="more" src="f/morena.jpg"></td>
+                                <td> <img  id="more" src="@Url.Content("~/PartidosPoliticos/"+item.PartidoPoliticoId+".jpg")"  /></td>
                                 <td> @Html.DisplayFor(modelItem => item.NombreCandidato)  @Html.DisplayFor(modelItem => item.ApellidoPaternoCandidato)  @Html.DisplayFor(modelItem => item.ApellidoMaternoCandidato)</td>
-                                <td> <img id="esd" src="f/esdrasvot.jpg"></td>
+                                <td> <img  id="more" src="@Url.Content("~/Candidatos/"+item.NombreCandidato+".jpg")"  /></td>
                                 <td>
                                     <input type="checkbox">
                                     <span class="checkmark"></span>
@@ -155,9 +155,9 @@
                         <from action="">
 
                             <tr>
-                                <td><img id="more" src="f/morena.jpg"></td>
+                                <td> <img id="more"   src="@Url.Content("~/PartidosPoliticos/"+item.PartidoPoliticoId+".jpg")"  /></td>
                                 <td> @Html.DisplayFor(modelItem => item.NombreCandidato)  @Html.DisplayFor(modelItem => item.ApellidoPaternoCandidato)  @Html.DisplayFor(modelItem => item.ApellidoMaternoCandidato)</td>
-                                <td> <img id="esd" src="f/esdrasvot.jpg"></td>
+                                <td> <img  id="more" src="@Url.Content("~/Candidatos/"+item.NombreCandidato+".jpg")"  /></td>
                                 <td>
                                     <input type="checkbox">
                                     <span class="checkmark"></span>
