@@ -429,6 +429,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Helper\EncryptionDecryption.cs" />
     <Compile Include="Migrations\201904012341389_intial.cs" />
     <Compile Include="Migrations\201904012341389_intial.Designer.cs">
       <DependentUpon>201904012341389_intial.cs</DependentUpon>
@@ -1441,6 +1442,7 @@
     <Content Include="Views\Persona\Usuario.cshtml" />
     <Content Include="Views\Persona\CC.cshtml" />
     <Content Include="Views\Persona\Grafica.cshtml" />
+    <Content Include="Views\Persona\Contacto.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
