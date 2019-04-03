@@ -583,6 +583,16 @@
     <Content Include="obj\Debug\Proyecto-INE.csproj.FileListAbsolute.txt" />
     <Content Include="obj\Debug\Proyecto-INE.dll" />
     <Content Include="obj\Debug\Proyecto-INE.pdb" />
+    <Content Include="PartidosPoliticos\1.jpg" />
+    <Content Include="PartidosPoliticos\10.jpg" />
+    <Content Include="PartidosPoliticos\2.jpg" />
+    <Content Include="PartidosPoliticos\3.jpg" />
+    <Content Include="PartidosPoliticos\4.jpg" />
+    <Content Include="PartidosPoliticos\5.jpg" />
+    <Content Include="PartidosPoliticos\6.jpg" />
+    <Content Include="PartidosPoliticos\7.jpg" />
+    <Content Include="PartidosPoliticos\8.jpg" />
+    <Content Include="PartidosPoliticos\9.jpg" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />

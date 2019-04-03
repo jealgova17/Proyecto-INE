@@ -96,7 +96,8 @@ namespace Proyecto_INE.Controllers
                               {
                                   nombre = p.NombreCandidato,
                                   paterno = p.ApellidoPaternoCandidato,
-                                  materno = p.ApellidoMaternoCandidato
+                                  materno = p.ApellidoMaternoCandidato,
+                                  partido = p.PartidoPoliticoId
                               }).ToList();
 
                 var query2 = (from p in dbCtx.Candidatos
@@ -107,7 +108,8 @@ namespace Proyecto_INE.Controllers
                               {
                                   nombre = p.NombreCandidato,
                                   paterno = p.ApellidoPaternoCandidato,
-                                  materno = p.ApellidoMaternoCandidato
+                                  materno = p.ApellidoMaternoCandidato,
+                                  partido = p.PartidoPoliticoId
                               }).ToList();
 
                 var query3 = (from p in dbCtx.Candidatos
@@ -118,7 +120,8 @@ namespace Proyecto_INE.Controllers
                               {
                                   nombre = p.NombreCandidato,
                                   paterno = p.ApellidoPaternoCandidato,
-                                  materno = p.ApellidoMaternoCandidato
+                                  materno = p.ApellidoMaternoCandidato,
+                                  partido = p.PartidoPoliticoId
                               }).ToList();
 
 
@@ -130,7 +133,8 @@ namespace Proyecto_INE.Controllers
                     {
                         NombreCandidato = i.nombre,
                         ApellidoPaternoCandidato = i.paterno,
-                        ApellidoMaternoCandidato = i.materno
+                        ApellidoMaternoCandidato = i.materno,
+                        PartidoPoliticoId = i.partido
                     };
                     
 
@@ -147,16 +151,10 @@ namespace Proyecto_INE.Controllers
                     {
                         NombreCandidato = i.nombre,
                         ApellidoPaternoCandidato = i.paterno,
-                        ApellidoMaternoCandidato = i.materno
+                        ApellidoMaternoCandidato = i.materno,
+                        PartidoPoliticoId = i.partido
                     };
-                    if (i.nombre != null)
-                    {
-                        var path = i.nombre;
-                        //var path = Server.MapPath("~") + @"Images";
-                        var fileName = path.ToString();
-                        //var fileFull = path + "\\" + fileName + ".jpg";
-                        ViewBag.foto = fileName + ".jpg";
-                    }
+               
 
 
                     candidatosGober.Add(vm);
@@ -170,16 +168,10 @@ namespace Proyecto_INE.Controllers
                     {
                         NombreCandidato = i.nombre,
                         ApellidoPaternoCandidato = i.paterno,
-                        ApellidoMaternoCandidato = i.materno
+                        ApellidoMaternoCandidato = i.materno,
+                        PartidoPoliticoId = i.partido
                     };
-                    if (i.nombre != null)
-                    {
-                        var path = i.nombre;
-                        //var path = Server.MapPath("~") + @"Images";
-                        var fileName = path.ToString();
-                        //var fileFull = path + "\\" + fileName + ".jpg";
-                        ViewBag.foto = fileName + ".jpg";
-                    }
+                  
 
 
                     candidatosMunicipales.Add(vm);
