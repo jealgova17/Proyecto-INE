@@ -1,0 +1,82 @@
+﻿
+@{
+    /**/
+
+    ViewBag.Title = "Contacto";
+
+}
+<html>
+<head>
+    <link rel="shortcut icon" href="~/Images/inne.ico">
+
+    <link rel="shortcut icon" href="inne.ico" />
+    <script language="JavaScript">
+        var txt = "Instituto Nacional Electoral-INE-";
+        var espera = 75;
+        var refresco = null;
+        function rotulo_title() {
+            document.title = txt;
+            txt = txt.substring(1, txt.length) + txt.charAt(0);
+            refresco = setTimeout("rotulo_title()", espera);
+        }
+        rotulo_title();
+
+
+    </script>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="~/css/contacto.css" />
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <input type="checkbox" id="nav" class="hidden">
+            <label for="nav" class="nav-btn">
+                <i></i>
+                <i></i>
+                <i></i>
+            </label>
+            <div class="logo">
+                <img src="~/Images/map.jpg" width="150px">
+            </div>
+            <div class="nav-wrapper">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="@Url.Action("Candidato", "Persona")">Candidatos</a></li>
+                    <li><a href="#">Estadisticas</a></li>
+                    <li><a href="@Url.Action("Login", "Persona")">Votar</a></li>
+                    <li><a href="@Url.Action("Contacto", "Persona")">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+
+    </div>
+
+   
+    <div class="centerrr">
+      
+        <h2>Contáctanos</h2>
+
+
+        <br />
+
+        <h3> Facebook: </h3>
+        <p>
+
+            <a href="https://www.facebook.com/Soporte-INE-338717200183925/"> Soporte INE Fb</a>
+        </p>
+        <h3> Correo electrónico: </h3>
+        <p> ayudaine@gmail.com</p>
+
+    </div>
+
+
+</body>
+</html>
+
+                   
+
+                    
+                 
