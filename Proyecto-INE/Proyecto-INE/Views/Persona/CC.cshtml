@@ -58,120 +58,121 @@
         List<Proyecto_INE.ViewModels.CandidatoViewModel> list2 = (List<Proyecto_INE.ViewModels.CandidatoViewModel>)Session["gober"];
         List<Proyecto_INE.ViewModels.CandidatoViewModel> list3 = (List<Proyecto_INE.ViewModels.CandidatoViewModel>)Session["muni"];
 
-       
-            <div class="mySlides fade">
-                <table>
-                    <CAPTION>PROCESO ELECTORAL FEDERAL 2018-2019</CAPTION>
-                    <CAPTION>FEDERAL</CAPTION>
-                    <thead>
+
+        <div class="mySlides fade">
+            <table>
+                <CAPTION>PROCESO ELECTORAL FEDERAL 2018-2019</CAPTION>
+                <CAPTION>FEDERAL</CAPTION>
+                <thead>
+                    <tr>
+                        <th>Partido</th>
+                        <th>Candidato</th>
+                        <th></th>
+                        <th>Votar</th>
+
+                    </tr>
+                </thead>
+
+                @foreach (var item in list1)
+                {
+                    <from action="">
+
                         <tr>
-                            <th>Partido</th>
-                            <th>Candidato</th>
-                            <th></th>
-                            <th>Votar</th>
-
+                            <td><img id="more" src="f/morena.jpg"></td>
+                            <td> @Html.DisplayFor(modelItem => item.NombreCandidato)  @Html.DisplayFor(modelItem => item.ApellidoPaternoCandidato)  @Html.DisplayFor(modelItem => item.ApellidoMaternoCandidato)</td>
+                            <td> <img src="@Url.Content("~/Candidatos/"+item.NombreCandidato+".jpg")" width="150" height="150" /></td>
+                            <td>
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </td>
                         </tr>
-                    </thead>
 
-                    @foreach (var item in list1)
-                    {
-                        <from action="">
+                    </from>
+                }
 
-                            <tr>
-                                <td><img id="more" src="f/morena.jpg"></td>
-                                <td> @Html.DisplayFor(modelItem => item.NombreCandidato)  @Html.DisplayFor(modelItem => item.ApellidoPaternoCandidato)  @Html.DisplayFor(modelItem => item.ApellidoMaternoCandidato)</td>
-                                <td> <img id="esd" src="f/esdrasvot.jpg"></td>
-                                <td>
-                                        <input type="checkbox" >
-                                        <span class="checkmark"></span>
-                                </td>
-                            </tr>
+            </table>
 
-                        </from>
-                    }
+        </div>
 
-                </table>
 
-            </div>
-            
 
-        
 
-        
-            <div class="mySlides fade">
-                <table>
-                    <CAPTION>PROCESO ELECTORAL FEDERAL 2018-2019</CAPTION>
-                    <CAPTION>FEDERAL</CAPTION>
-                    <thead>
+
+        <div class="mySlides fade">
+            <table>
+                <CAPTION>PROCESO ELECTORAL FEDERAL 2018-2019</CAPTION>
+                <CAPTION>FEDERAL</CAPTION>
+                <thead>
+                    <tr>
+                        <th>Partido</th>
+                        <th>Candidato</th>
+                        <th></th>
+                        <th>Votar</th>
+
+                    </tr>
+                </thead>
+                @foreach (var item in list2)
+                {
+                    <from action="">
+
                         <tr>
-                            <th>Partido</th>
-                            <th>Candidato</th>
-                            <th></th>
-                            <th>Votar</th>
-
+                            <td><img id="more" src="f/morena.jpg"></td>
+                            <td> @Html.DisplayFor(modelItem => item.NombreCandidato)  @Html.DisplayFor(modelItem => item.ApellidoPaternoCandidato)  @Html.DisplayFor(modelItem => item.ApellidoMaternoCandidato)</td>
+                            <td> <img src="@Url.Content("~/Candidatos/"+item.NombreCandidato+".jpg")" width="150" height="150" /></td>
+                            <td>
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </td>
                         </tr>
-                    </thead>
-                    @foreach (var item in list2)
-                    {
-                        <from action="">
 
-                            <tr>
-                                <td><img id="more" src="f/morena.jpg"></td>
-                                <td> @Html.DisplayFor(modelItem => item.NombreCandidato)  @Html.DisplayFor(modelItem => item.ApellidoPaternoCandidato)  @Html.DisplayFor(modelItem => item.ApellidoMaternoCandidato)</td>
-                                <td> <img id="esd" src="f/esdrasvot.jpg"></td>
-                                <td>
-                                    <input type="checkbox">
-                                    <span class="checkmark"></span>
-                                </td>
-                            </tr>
+                    </from>
+                }
 
-                        </from>
-                    }
+            </table>
 
-                </table>
-
-            </div>
-            
-
-        
+        </div>
 
 
-        
-            <div class="mySlides fade">
-                <table>
-                    <CAPTION>PROCESO ELECTORAL FEDERAL 2018-2019</CAPTION>
-                    <CAPTION>FEDERAL</CAPTION>
-                    <thead>
+
+
+
+
+        <div class="mySlides fade">
+            <table>
+                <CAPTION>PROCESO ELECTORAL FEDERAL 2018-2019</CAPTION>
+                <CAPTION>FEDERAL</CAPTION>
+                <thead>
+                    <tr>
+                        <th>Partido</th>
+                        <th>Candidato</th>
+                        <th></th>
+                        <th>Votar</th>
+
+                    </tr>
+                </thead>
+                @foreach (var item in list3)
+                {
+                    <from action="">
+
                         <tr>
-                            <th>Partido</th>
-                            <th>Candidato</th>
-                            <th></th>
-                            <th>Votar</th>
+                            <td><img id="more" src="f/morena.jpg"></td>
+                            <td> @Html.DisplayFor(modelItem => item.NombreCandidato)  @Html.DisplayFor(modelItem => item.ApellidoPaternoCandidato)  @Html.DisplayFor(modelItem => item.ApellidoMaternoCandidato)</td>
 
+                            <td> <img src="@Url.Content("~/Candidatos/"+item.NombreCandidato+".jpg")" width="150" height="150" /></td>
+                            <td>
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </td>
                         </tr>
-                    </thead>
-                    @foreach (var item in list3)
-                    {
-                        <from action="">
 
-                            <tr>
-                                <td><img id="more" src="f/morena.jpg"></td>
-                                <td> @Html.DisplayFor(modelItem => item.NombreCandidato)  @Html.DisplayFor(modelItem => item.ApellidoPaternoCandidato)  @Html.DisplayFor(modelItem => item.ApellidoMaternoCandidato)</td>
-                                <td> <img id="esd" src="f/esdrasvot.jpg"></td>
-                                <td>
-                                    <input type="checkbox">
-                                    <span class="checkmark"></span>
-                                </td>
-                            </tr>
+                    </from>
+                }
 
-                        </from>
-                    }
+            </table>
 
-                </table>
+        </div>
 
-            </div>
 
-      
 
     }
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>

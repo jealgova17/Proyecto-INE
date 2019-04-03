@@ -1,4 +1,5 @@
-﻿using Proyecto_INE.Models;
+﻿using Newtonsoft.Json;
+using Proyecto_INE.Models;
 using Proyecto_INE.ViewModels;
 using System;
 using System.Collections.Generic;
@@ -13,6 +14,7 @@ namespace Proyecto_INE.Controllers
 {
     public class PersonaController : Controller
     {
+
         // GET: Persona
         public ActionResult Index()
         {
@@ -58,16 +60,16 @@ namespace Proyecto_INE.Controllers
             Persona p = null;
             if (Session["curp"] != null)
             {
-                //var path = Server.MapPath("~") + @"Images";
+
                 var fileName = Session["curp"].ToString();
-                //var fileFull = path + "\\" + fileName + ".jpg";
+
                 ViewBag.foto = fileName + ".jpg";
                 using (INEDbContext dbCtx = new INEDbContext())
                 {
                     p = dbCtx.Personas.Where(x => x.Curp == fileName).SingleOrDefault();
 
                     Session["municipio"] = p.MunicipioId;
-                    
+
                 }
             }
             return View(p);
@@ -82,22 +84,20 @@ namespace Proyecto_INE.Controllers
 
         public ActionResult CC()
         {
-         
-          
             int m = Convert.ToInt32(Session["municipio"]);
-         
+
             using (INEDbContext dbCtx = new INEDbContext())
             {
                 var query1 = (from p in dbCtx.Candidatos
-                             join pp in dbCtx.Puestos on p.PuestoId equals pp.Id
-                             join ppp in dbCtx.Municipios on p.MunicipioId equals ppp.Id
-                             where p.PuestoId == 1
-                             select new
-                             {
-                                 nombre = p.NombreCandidato,
-                                 paterno = p.ApellidoPaternoCandidato,
-                                 materno = p.ApellidoMaternoCandidato
-                             }).ToList();
+                              join pp in dbCtx.Puestos on p.PuestoId equals pp.Id
+                              join ppp in dbCtx.Municipios on p.MunicipioId equals ppp.Id
+                              where p.PuestoId == 1
+                              select new
+                              {
+                                  nombre = p.NombreCandidato,
+                                  paterno = p.ApellidoPaternoCandidato,
+                                  materno = p.ApellidoMaternoCandidato
+                              }).ToList();
 
                 var query2 = (from p in dbCtx.Candidatos
                               join pp in dbCtx.Puestos on p.PuestoId equals pp.Id
@@ -132,7 +132,9 @@ namespace Proyecto_INE.Controllers
                         ApellidoPaternoCandidato = i.paterno,
                         ApellidoMaternoCandidato = i.materno
                     };
+                    
 
+               
                     candidatosPresidentes.Add(vm);
                 }
 
@@ -147,6 +149,15 @@ namespace Proyecto_INE.Controllers
                         ApellidoPaternoCandidato = i.paterno,
                         ApellidoMaternoCandidato = i.materno
                     };
+                    if (i.nombre != null)
+                    {
+                        var path = i.nombre;
+                        //var path = Server.MapPath("~") + @"Images";
+                        var fileName = path.ToString();
+                        //var fileFull = path + "\\" + fileName + ".jpg";
+                        ViewBag.foto = fileName + ".jpg";
+                    }
+
 
                     candidatosGober.Add(vm);
                 }
@@ -161,6 +172,15 @@ namespace Proyecto_INE.Controllers
                         ApellidoPaternoCandidato = i.paterno,
                         ApellidoMaternoCandidato = i.materno
                     };
+                    if (i.nombre != null)
+                    {
+                        var path = i.nombre;
+                        //var path = Server.MapPath("~") + @"Images";
+                        var fileName = path.ToString();
+                        //var fileFull = path + "\\" + fileName + ".jpg";
+                        ViewBag.foto = fileName + ".jpg";
+                    }
+
 
                     candidatosMunicipales.Add(vm);
                 }
@@ -169,16 +189,36 @@ namespace Proyecto_INE.Controllers
                 Session["gober"] = candidatosGober;
                 Session["muni"] = candidatosMunicipales;
 
+
                 return View();
             }
 
-
-
         }
 
-  
 
-        
+
 
     }
+
+
+
+    //public ActionResult Grafica()
+    //{
+
+    //    using (INEDbContext dbCtx = new INEDbContext())
+    //    {
+    //        var query = (from v in dbCtx.Votos
+    //                     join c in dbCtx.Candidatos on v.votos equals c.Id
+    //                     select new
+    //                     {
+    //                         nombre = c.NombreCandidato,
+    //                         totalv = v.votos
+    //                     }).ToList();
+
+    //        return View();
+    //    }
+    //}
+
+
+
 }
