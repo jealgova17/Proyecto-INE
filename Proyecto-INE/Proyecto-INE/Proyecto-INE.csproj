@@ -525,6 +525,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="css\apodaca.css" />
     <Content Include="css\candidato.css" />
+    <Content Include="css\contacto.css" />
     <Content Include="css\inicio.css" />
     <Content Include="css\login.css" />
     <Content Include="css\Normas.css" />
@@ -1408,6 +1409,7 @@
     <Content Include="Views\Persona\Normas.cshtml" />
     <Content Include="Views\Persona\Usuario.cshtml" />
     <Content Include="Views\Persona\CC.cshtml" />
+    <Content Include="Views\Persona\Contacto.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -79,7 +79,11 @@ namespace Proyecto_INE.Controllers
             RedirectToAction("CC", "Persona");
             return View();
         }
-
+        public ActionResult Contacto()
+        {
+         
+            return View();
+        }
         public ActionResult CC()
         {
          
