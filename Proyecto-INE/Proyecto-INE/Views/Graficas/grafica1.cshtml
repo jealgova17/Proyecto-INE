@@ -53,17 +53,11 @@
             </div>
         </nav>
         <div class="gra1">
-            @*<h2>grafica1</h2>*@
-
-
-            <h2>Municipio</h2>
-            @Html.DropDownList("Municipio", (IEnumerable<SelectListItem>)TempData["municipio"],
-                "Please select an Month", new { @class = "form-control" })
+    
 
 
 
-
-            @*<h2>grafica1</h2>
+            <h2>grafica1</h2>
         <script src="http://code.highcharts.com/highcharts.js"></script>
         <script src="https://code.highcharts.com/modules/exporting.js"></script>
 
@@ -128,13 +122,13 @@
         new PieSeries
         {
             Name = "Browser Share",
-            Data = @ViewData["ConsultaPartidosPoliticos"] as List<PieSeriesData>
+            Data = @ViewData["ConsultaAcaldes"] as List<PieSeriesData>
         },
 
                             }
                         }
                         , "chart")
-        )*@
+        )
 
 
             @* Aqui empieza la segunda *@
