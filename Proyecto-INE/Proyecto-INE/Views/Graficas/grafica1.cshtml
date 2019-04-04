@@ -1,0 +1,213 @@
+﻿
+@{
+    ViewBag.Title = "grafica1";
+}
+
+<!doctype html>
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <link rel="shortcut icon" href="~/Images/inne.ico">
+
+    <link rel="shortcut icon" href="inne.ico" />
+    <script language="JavaScript">
+        var txt = "Instituto Nacional Electoral-INE-";
+        var espera = 75;
+        var refresco = null;
+        function rotulo_title() {
+            document.title = txt;
+            txt = txt.substring(1, txt.length) + txt.charAt(0);
+            refresco = setTimeout("rotulo_title()", espera);
+        }
+        rotulo_title();
+
+
+    </script>
+
+    <link rel="stylesheet" type="text/css" href="~/css/inicio.css" />
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <input type="checkbox" id="nav" class="hidden">
+            <label for="nav" class="nav-btn">
+                <i></i>
+                <i></i>
+                <i></i>
+            </label>
+            <div class="logo">
+                <img src="~/Images/map.jpg" width="150px">
+            </div>
+            <div class="nav-wrapper">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="@Url.Action("Candidato", "Persona")">Candidatos</a></li>
+                    <li><a href="#">Estadisticas</a></li>
+                    <li><a href="@Url.Action("Login", "Persona")">Votar</a></li>
+
+
+                    <li><a href="@Url.Action("Contacto", "Persona")">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="gra1">
+            @*<h2>grafica1</h2>*@
+
+
+            <h2>Municipio</h2>
+            @Html.DropDownList("Municipio", (IEnumerable<SelectListItem>)TempData["municipio"],
+                "Please select an Month", new { @class = "form-control" })
+
+
+
+
+            @*<h2>grafica1</h2>
+        <script src="http://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+        @using Highsoft.Web.Mvc.Charts
+
+        <script type="text/javascript">
+
+            // Radialize the colors
+            Highcharts.getOptions().colors = Highcharts.map(Highcharts.getOptions().colors, function (color) {
+                return {
+                    radialGradient: {
+                        cx: 0.5,
+                        cy: 0.3,
+                        r: 0.7
+                    },
+                    stops: [
+                        [0, color],
+                        [1, Highcharts.Color(color).brighten(-0.3).get('rgb')] // darken
+                    ]
+                };
+            });
+
+
+        </script>
+
+
+        @(Html.Highsoft().GetHighcharts(
+                        new Highcharts
+                        {
+                            Chart = new Highsoft.Web.Mvc.Charts.Chart
+                            {
+                                PlotBackgroundColor = null,
+                                PlotBorderWidth = null,
+                                PlotShadow = new Shadow
+                                {
+                                    Enabled = false
+                                }
+                            },
+                            Title = new Title
+                            {
+                                Text = "Browser market shares at a specific website, 2014"
+                            },
+                            Tooltip = new Tooltip
+                            {
+                                PointFormat = "{series.name}: <b>{point.percentage:.1f}%</b>"
+                            },
+                            PlotOptions = new PlotOptions
+                            {
+                                Pie = new PlotOptionsPie
+                                {
+                                    AllowPointSelect = true,
+                                    Cursor = PlotOptionsPieCursor.Pointer,
+                                    DataLabels = new PlotOptionsPieDataLabels
+                                    {
+                                        Enabled = true,
+                                        Format = "<b>{point.name}</b>: {point.percentage:.1f} %"
+                                    }
+                                }
+                            },
+                            Series = new List<Series>
+                            {
+        new PieSeries
+        {
+            Name = "Browser Share",
+            Data = @ViewData["ConsultaPartidosPoliticos"] as List<PieSeriesData>
+        },
+
+                            }
+                        }
+                        , "chart")
+        )*@
+
+
+            @* Aqui empieza la segunda *@
+
+            @*<script src="http://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+        @using Highsoft.Web.Mvc.Charts
+
+        <script type="text/javascript">
+
+            // Radialize the colors
+            Highcharts.getOptions().colors = Highcharts.map(Highcharts.getOptions().colors, function (color) {
+                return {
+                    radialGradient: {
+                        cx: 0.5,
+                        cy: 0.3,
+                        r: 0.7
+                    },
+                    stops: [
+                        [0, color],
+                        [1, Highcharts.Color(color).brighten(-0.3).get('rgb')] // darken
+                    ]
+                };
+            });
+
+
+        </script>
+
+
+        @(Html.Highsoft().GetHighcharts(
+                        new Highcharts
+                        {
+                            Chart = new Highsoft.Web.Mvc.Charts.Chart
+                            {
+                                PlotBackgroundColor = null,
+                                PlotBorderWidth = null,
+                                PlotShadow = new Shadow
+                                {
+                                    Enabled = false
+                                }
+                            },
+                            Title = new Title
+                            {
+                                Text = "Browser market shares at a specific website, 2014"
+                            },
+                            Tooltip = new Tooltip
+                            {
+                                PointFormat = "{series.name}: <b>{point.percentage:.1f}%</b>"
+                            },
+                            PlotOptions = new PlotOptions
+                            {
+                                Pie = new PlotOptionsPie
+                                {
+                                    AllowPointSelect = true,
+                                    Cursor = PlotOptionsPieCursor.Pointer,
+                                    DataLabels = new PlotOptionsPieDataLabels
+                                    {
+                                        Enabled = true,
+                                        Format = "<b>{point.name}</b>: {point.percentage:.1f} %"
+                                    }
+                                }
+                            },
+                            Series = new List<Series>
+                            {
+        new PieSeries
+        {
+            Name = "Browser Share",
+            Data = @ViewData["ConsultaPresidentes"] as List<PieSeriesData>
+        },
+
+                            }
+                        }
+                        , "chart")
+        )*@
+
