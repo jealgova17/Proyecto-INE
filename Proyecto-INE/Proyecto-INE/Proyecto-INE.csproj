@@ -869,6 +869,10 @@
     <Content Include="Views\Persona\CC.cshtml" />
     <Content Include="Views\Persona\Contacto.cshtml" />
     <Content Include="Views\Graficas\grafica1.cshtml" />
+    <Content Include="Views\Graficas\Presidentes.cshtml" />
+    <Content Include="Views\Graficas\ConsultaGobernadores.cshtml" />
+    <Content Include="Views\Graficas\ConsultaPartidosPoliticos.cshtml" />
+    <Content Include="Views\Graficas\ConsultaAlcaldes.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
