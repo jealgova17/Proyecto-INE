@@ -98,7 +98,7 @@ namespace Proyecto_INE.Models
         public string CIC { get; set; }
 
         [DefaultValue("false")]
-        public Boolean voto { get; set; }
+        public int voto { get; set; }
       
 
     }

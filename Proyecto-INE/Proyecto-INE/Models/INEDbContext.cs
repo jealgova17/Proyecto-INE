@@ -28,5 +28,7 @@ namespace Proyecto_INE.Models
         {
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
         }
+
+        public System.Data.Entity.DbSet<Proyecto_INE.ViewModels.CandidatoViewModel> CandidatoViewModels { get; set; }
     }
 }

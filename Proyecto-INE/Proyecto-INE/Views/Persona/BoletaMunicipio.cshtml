@@ -1,0 +1,143 @@
+﻿@model Proyecto_INE.ViewModels.CandidatoViewModel
+
+@{
+                /**/
+
+                Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <link rel="shortcut icon" href="~/Images/inne.ico">
+
+    <link rel="shortcut icon" href="inne.ico" />
+    <script language="JavaScript">
+            var txt = "Instituto Nacional Electoral-INE-";
+            var espera = 75;
+            var refresco = null;
+            function rotulo_title() {
+                document.title = txt;
+                txt = txt.substring(1, txt.length) + txt.charAt(0);
+                refresco = setTimeout("rotulo_title()", espera);
+            }
+            rotulo_title();
+    </script>
+    <link rel="stylesheet" type="text/css" href="~/css/apodaca.css" />
+
+</head>
+<body>
+
+    <div class="container">
+        <nav>
+            <input type="checkbox" id="nav" class="hidden">
+            <label for="nav" class="nav-btn">
+                <i></i>
+                <i></i>
+                <i></i>
+            </label>
+            <div class="logo">
+                <img src="~/Images/map.jpg" width="150px">
+            </div>
+            <div class="nav-wrapper">
+                <ul>
+                    <li><a href="@Url.Action("Index", "Persona")">Inicio</a></li>
+                    <li><a href="@Url.Action("Candidato", "Persona")">Candidato</a></li>
+                    <li><a href="#">Estadisticas</a></li>
+                    <li><a href="@Url.Action("Login", "Persona")">Votar</a></li>
+                    <li><a href="@Url.Action("Contacto", "Persona")">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+
+    @using (Html.BeginForm("ivmuni", "Persona", FormMethod.Post))
+    {
+
+        List<Proyecto_INE.ViewModels.CandidatoViewModel> list3 = (List<Proyecto_INE.ViewModels.CandidatoViewModel>)Session["muni"];
+
+        <div class="mySlides fade">
+            <table>
+                <CAPTION>PROCESO ELECTORAL FEDERAL 2018-2019</CAPTION>
+                <CAPTION>FEDERAL</CAPTION>
+                <thead>
+                    <tr>
+                        <th>Partido</th>
+                        <th>Candidato</th>
+                        <th></th>
+                        <th>Votar</th>
+
+                    </tr>
+                </thead>
+                @foreach (var item in list3)
+                {
+                    <from action="">
+
+                        <tr>
+                            <td> <img src="@Url.Content("~/PartidosPoliticos/" + item.PartidoPoliticoId + ".jpg")" width="150" height="150" /></td>
+                            <td> @Html.DisplayFor(modelItem => item.NombreCandidato)  @Html.DisplayFor(modelItem => item.ApellidoPaternoCandidato)  @Html.DisplayFor(modelItem => item.ApellidoMaternoCandidato)</td>
+
+                            <td> <img src="@Url.Content("~/Candidatos/" + item.NombreCandidato + ".jpg")" width="150" height="150" /></td>
+                            <td>
+                                <div class="col-md-6">
+                                    @Html.RadioButtonFor(modelItem => modelItem.Id, item.Id) Envio Estándar
+                                </div>
+                            </td>
+                        </tr>
+
+                    </from>
+                }
+
+            </table>
+
+            <button type="submit" value="Confirmar" class="button">Aceptar</button>
+
+        </div>
+    }
+
+
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = slides.length }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+            }
+    </script>
+
+</body>
+</html>

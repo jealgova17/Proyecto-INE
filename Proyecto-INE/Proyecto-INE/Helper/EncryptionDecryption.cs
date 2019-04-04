@@ -8,7 +8,7 @@ using System.Text;
 using System.Security.Cryptography;
 using System.IO;
 
-namespace UTEWebApp.Helper
+namespace Proyecto_INE.Helper
 {
     public class EncryptionDecryption
     {

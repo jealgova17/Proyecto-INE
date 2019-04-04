@@ -130,14 +130,7 @@
 
     </div>
 
-
-    @using (Html.BeginForm("CC", "Persona", FormMethod.Post))
-    {
-        <button type="submit" value="Confirmar" class="button">Ingresar</button>
-
-       
-
-    }
+   @Html.ActionLink("Aceptar", "BoletaPresidente", new { @class="btn btn-default" })
 
 </body>
 </html>
