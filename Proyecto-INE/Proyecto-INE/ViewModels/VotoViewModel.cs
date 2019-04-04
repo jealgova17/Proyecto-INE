@@ -19,5 +19,6 @@ namespace Proyecto_INE.ViewModels
         [Required(ErrorMessage = "El campo votos es obligatorio")]
         [Range(0, int.MaxValue, ErrorMessage = "Debe ser un numero entero")]
         public int votos { get; set; }
+
     }
 }

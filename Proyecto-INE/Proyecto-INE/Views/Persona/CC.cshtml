@@ -41,9 +41,10 @@
             <div class="nav-wrapper">
                 <ul>
                     <li><a href="@Url.Action("Index", "Persona")">Inicio</a></li>
-                    <li><a href="Candidatos.html">Candidatos</a></li>
+                    <li><a href="@Url.Action("Candidato", "Persona")">Candidato</a></li>
                     <li><a href="#">Estadisticas</a></li>
                     <li><a href="@Url.Action("Login", "Persona")">Votar</a></li>
+                    <li><a href="@Url.Action("Contacto", "Persona")">Contacto</a></li>
                 </ul>
             </div>
         </nav>
@@ -54,29 +55,46 @@
     {
 
         List<Proyecto_INE.ViewModels.CandidatoViewModel> list1 = (List<Proyecto_INE.ViewModels.CandidatoViewModel>)Session["presi"];
-        List<Proyecto_INE.ViewModels.CandidatoViewModel> list11 = (List<Proyecto_INE.ViewModels.CandidatoViewModel>)Session["presi"];
+
         List<Proyecto_INE.ViewModels.CandidatoViewModel> list2 = (List<Proyecto_INE.ViewModels.CandidatoViewModel>)Session["gober"];
         List<Proyecto_INE.ViewModels.CandidatoViewModel> list3 = (List<Proyecto_INE.ViewModels.CandidatoViewModel>)Session["muni"];
 
-       
-            <div class="mySlides fade">
-                <table>
-                    <CAPTION>PROCESO ELECTORAL FEDERAL 2018-2019</CAPTION>
-                    <CAPTION>FEDERAL</CAPTION>
-                    <thead>
+
+        <div class="mySlides fade">
+            <table>
+                <CAPTION>PROCESO ELECTORAL FEDERAL 2018-2019</CAPTION>
+                <CAPTION>FEDERAL</CAPTION>
+                <thead>
+                    <tr>
+                        <th>Partido</th>
+                        <th>Candidato</th>
+                        <th></th>
+                        <th>Votar</th>
+
+                    </tr>
+                </thead>
+
+                @foreach (var item in list1)
+                {
+                    <from action="">
+
                         <tr>
-                            <th>Partido</th>
-                            <th>Candidato</th>
-                            <th></th>
-                            <th>Votar</th>
-
+                            <td> <img src="@Url.Content("~/PartidosPoliticos/"+item.PartidoPoliticoId+".jpg")" width="150" height="150" /></td>
+                            <td> @Html.DisplayFor(modelItem => item.NombreCandidato)  @Html.DisplayFor(modelItem => item.ApellidoPaternoCandidato)  @Html.DisplayFor(modelItem => item.ApellidoMaternoCandidato)</td>
+                            <td> <img src="@Url.Content("~/Candidatos/"+item.NombreCandidato+".jpg")" width="150" height="150" /></td>
+                            <td>
+                                <div class="col-md-6">
+                                    @Html.RadioButtonFor(model => item.Id, "Votar")
+                                </div>
+                            </td>
                         </tr>
-                    </thead>
 
-                    @foreach (var item in list1)
-                    {
-                        <from action="">
+                    </from>
+                }
 
+<<<<<<< HEAD
+            </table>
+=======
                             <tr>
                                 <td>  <img id="more" src="@Url.Content("~/PartidosPoliticos/"+item.PartidoPoliticoId+".jpg")" /></td>
                                 <td> @Html.DisplayFor(modelItem => item.NombreCandidato)  @Html.DisplayFor(modelItem => item.ApellidoPaternoCandidato)  @Html.DisplayFor(modelItem => item.ApellidoMaternoCandidato)</td>
@@ -86,30 +104,43 @@
                                     <span class="checkmark"></span>
                                 </td>
                             </tr>
+>>>>>>> 5f41fcc21d1886bdb09d6586874bb832dc56add5
 
-                        </from>
-                    }
+        </div>
 
-                </table>
 
-            </div>
-            
 
-        
 
-        
-            <div class="mySlides fade">
-                <table>
-                    <CAPTION>PROCESO ELECTORAL FEDERAL 2018-2019</CAPTION>
-                    <CAPTION>FEDERAL</CAPTION>
-                    <thead>
+
+        <div class="mySlides fade">
+            <table>
+                <CAPTION>PROCESO ELECTORAL FEDERAL 2018-2019</CAPTION>
+                <CAPTION>FEDERAL</CAPTION>
+                <thead>
+                    <tr>
+                        <th>Partido</th>
+                        <th>Candidato</th>
+                        <th></th>
+                        <th>Votar</th>
+
+                    </tr>
+                </thead>
+                @foreach (var item in list2)
+                {
+                    <from action="">
+
                         <tr>
-                            <th>Partido</th>
-                            <th>Candidato</th>
-                            <th></th>
-                            <th>Votar</th>
-
+                            <td> <img src="@Url.Content("~/PartidosPoliticos/"+item.PartidoPoliticoId+".jpg")" width="150" height="150" /></td>
+                            <td> @Html.DisplayFor(modelItem => item.NombreCandidato)  @Html.DisplayFor(modelItem => item.ApellidoPaternoCandidato)  @Html.DisplayFor(modelItem => item.ApellidoMaternoCandidato)</td>
+                            <td> <img src="@Url.Content("~/Candidatos/"+item.NombreCandidato+".jpg")" width="150" height="150" /></td>
+                            <td>
+                                <div class="col-md-6">
+                                    @Html.RadioButtonFor(model => item.Id, "Votar")
+                                </div>
+                            </td>
                         </tr>
+<<<<<<< HEAD
+=======
                     </thead>
                     @foreach (var item in list2)
                     {
@@ -129,26 +160,50 @@
                     }
 
                 </table>
+>>>>>>> 5f41fcc21d1886bdb09d6586874bb832dc56add5
 
-            </div>
-            
+                    </from>
+                }
 
-        
+            </table>
+
+        </div>
 
 
-        
-            <div class="mySlides fade">
-                <table>
-                    <CAPTION>PROCESO ELECTORAL FEDERAL 2018-2019</CAPTION>
-                    <CAPTION>FEDERAL</CAPTION>
-                    <thead>
+
+
+
+
+        <div class="mySlides fade">
+            <table>
+                <CAPTION>PROCESO ELECTORAL FEDERAL 2018-2019</CAPTION>
+                <CAPTION>FEDERAL</CAPTION>
+                <thead>
+                    <tr>
+                        <th>Partido</th>
+                        <th>Candidato</th>
+                        <th></th>
+                        <th>Votar</th>
+
+                    </tr>
+                </thead>
+                @foreach (var item in list3)
+                {
+                    <from action="">
+
                         <tr>
-                            <th>Partido</th>
-                            <th>Candidato</th>
-                            <th></th>
-                            <th>Votar</th>
+                            <td> <img src="@Url.Content("~/PartidosPoliticos/"+item.PartidoPoliticoId+".jpg")" width="150" height="150" /></td>
+                            <td> @Html.DisplayFor(modelItem => item.NombreCandidato)  @Html.DisplayFor(modelItem => item.ApellidoPaternoCandidato)  @Html.DisplayFor(modelItem => item.ApellidoMaternoCandidato)</td>
 
+                            <td> <img src="@Url.Content("~/Candidatos/"+item.NombreCandidato+".jpg")" width="150" height="150" /></td>
+                            <td>
+                                <div class="col-md-6">
+                                    @Html.RadioButtonFor(model => item.Id, "Votar")
+                                </div>
+                            </td>
                         </tr>
+<<<<<<< HEAD
+=======
                     </thead>
                     @foreach (var item in list3)
                     {
@@ -168,10 +223,16 @@
                     }
 
                 </table>
+>>>>>>> 5f41fcc21d1886bdb09d6586874bb832dc56add5
 
-            </div>
+                    </from>
+                }
 
-      
+            </table>
+
+        </div>
+
+
 
     }
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -214,5 +275,7 @@
             dots[slideIndex - 1].className += " active";
         }
     </script>
+
+    <a type="submit" value="Confirmar" href="#" class="button">Aceptar</a>
 </body>
 </html>

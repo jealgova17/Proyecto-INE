@@ -1,10 +1,11 @@
-﻿using Proyecto_INE.Models;
+﻿using Newtonsoft.Json;
+using Proyecto_INE.Models;
 using Proyecto_INE.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Web;
 using System.Web.Mvc;
-
 
 
 
@@ -13,6 +14,7 @@ namespace Proyecto_INE.Controllers
 {
     public class PersonaController : Controller
     {
+
         // GET: Persona
         public ActionResult Index()
         {
@@ -58,16 +60,19 @@ namespace Proyecto_INE.Controllers
             Persona p = null;
             if (Session["curp"] != null)
             {
-                //var path = Server.MapPath("~") + @"Images";
+
                 var fileName = Session["curp"].ToString();
-                //var fileFull = path + "\\" + fileName + ".jpg";
                 ViewBag.foto = fileName + ".jpg";
+
+
+
                 using (INEDbContext dbCtx = new INEDbContext())
                 {
                     p = dbCtx.Personas.Where(x => x.Curp == fileName).SingleOrDefault();
 
                     Session["municipio"] = p.MunicipioId;
-                    
+                    return RedirectToAction("Normas", "Persona");
+
                 }
             }
             return View(p);
@@ -76,18 +81,12 @@ namespace Proyecto_INE.Controllers
 
         public ActionResult Normas()
         {
-            RedirectToAction("CC", "Persona");
             return View();
         }
-        public ActionResult Contacto()
-        {
-         
-            return View();
-        }
-        public ActionResult CC()
+
+        public ActionResult BoletaPresidente()
         {
             int m = Convert.ToInt32(Session["municipio"]);
-
             using (INEDbContext dbCtx = new INEDbContext())
             {
                 var query1 = (from p in dbCtx.Candidatos
@@ -99,9 +98,49 @@ namespace Proyecto_INE.Controllers
                                   nombre = p.NombreCandidato,
                                   paterno = p.ApellidoPaternoCandidato,
                                   materno = p.ApellidoMaternoCandidato,
-                                  partido = p.PartidoPoliticoId
+                                  partido = p.PartidoPoliticoId,
+                                  id = p.Id
                               }).ToList();
 
+
+                List<CandidatoViewModel> candidatosPresidentes = new List<CandidatoViewModel>();
+                foreach (var i in query1)
+                {
+                    CandidatoViewModel vm = new CandidatoViewModel()
+                    {
+                        NombreCandidato = i.nombre,
+                        ApellidoPaternoCandidato = i.paterno,
+                        ApellidoMaternoCandidato = i.materno,
+                        PartidoPoliticoId = i.partido,
+                        Id = i.id
+
+                    };
+                    candidatosPresidentes.Add(vm);
+                }
+
+                Session["presi"] = candidatosPresidentes;
+
+                return View();
+            }
+
+        }
+
+        public ActionResult BoletaEstado(CandidatoViewModel vm)
+        {
+            Voto vv = new Voto();
+            using (INEDbContext dbCtx = new INEDbContext())
+            {
+                
+                    
+                    vv.CandidatoId = vm.Id;
+                    vv.votos = 1;
+                        dbCtx.Votos.Add(vv);
+                        dbCtx.SaveChanges();
+
+                    
+                
+
+                int m = Convert.ToInt32(Session["municipio"]);
                 var query2 = (from p in dbCtx.Candidatos
                               join pp in dbCtx.Puestos on p.PuestoId equals pp.Id
                               join ppp in dbCtx.Municipios on p.MunicipioId equals ppp.Id
@@ -111,9 +150,44 @@ namespace Proyecto_INE.Controllers
                                   nombre = p.NombreCandidato,
                                   paterno = p.ApellidoPaternoCandidato,
                                   materno = p.ApellidoMaternoCandidato,
-                                  partido = p.PartidoPoliticoId
+                                  partido = p.PartidoPoliticoId,
+                                  id = p.Id
                               }).ToList();
 
+                List<CandidatoViewModel> candidatosGober = new List<CandidatoViewModel>();
+                foreach (var i in query2)
+                {
+                    CandidatoViewModel vmm = new CandidatoViewModel()
+                    {
+                        NombreCandidato = i.nombre,
+                        ApellidoPaternoCandidato = i.paterno,
+                        ApellidoMaternoCandidato = i.materno,
+                        PartidoPoliticoId = i.partido,
+                        Id = i.id
+                    };
+                    candidatosGober.Add(vmm);
+                }
+
+                Session["gober"] = candidatosGober;
+            }
+            return View();
+        }
+
+        public ActionResult BoletaMunicipio(CandidatoViewModel vm)
+        {
+            Voto vv = new Voto();
+            using (INEDbContext dbCtx = new INEDbContext())
+            {
+
+
+                vv.CandidatoId = vm.Id;
+                vv.votos = 1;
+                dbCtx.Votos.Add(vv);
+                dbCtx.SaveChanges();
+
+                int m = Convert.ToInt32(Session["municipio"]);
+            
+            
                 var query3 = (from p in dbCtx.Candidatos
                               join pp in dbCtx.Puestos on p.PuestoId equals pp.Id
                               join ppp in dbCtx.Municipios on p.MunicipioId equals ppp.Id
@@ -123,75 +197,55 @@ namespace Proyecto_INE.Controllers
                                   nombre = p.NombreCandidato,
                                   paterno = p.ApellidoPaternoCandidato,
                                   materno = p.ApellidoMaternoCandidato,
-                                  partido = p.PartidoPoliticoId
+                                  partido = p.PartidoPoliticoId,
+                                  id = p.Id
                               }).ToList();
 
 
-                List<CandidatoViewModel> candidatosPresidentes = new List<CandidatoViewModel>();
-
-                foreach (var i in query1)
-                {
-                    CandidatoViewModel vm = new CandidatoViewModel()
-                    {
-                        NombreCandidato = i.nombre,
-                        ApellidoPaternoCandidato = i.paterno,
-                        ApellidoMaternoCandidato = i.materno,
-                        PartidoPoliticoId = i.partido
-                    };
-
-
-
-                    candidatosPresidentes.Add(vm);
-                }
-
-
-                List<CandidatoViewModel> candidatosGober = new List<CandidatoViewModel>();
-
-                foreach (var i in query2)
-                {
-                    CandidatoViewModel vm = new CandidatoViewModel()
-                    {
-                        NombreCandidato = i.nombre,
-                        ApellidoPaternoCandidato = i.paterno,
-                        ApellidoMaternoCandidato = i.materno,
-                        PartidoPoliticoId = i.partido
-                    };
-
-
-
-                    candidatosGober.Add(vm);
-                }
-
                 List<CandidatoViewModel> candidatosMunicipales = new List<CandidatoViewModel>();
-
                 foreach (var i in query3)
                 {
-                    CandidatoViewModel vm = new CandidatoViewModel()
+                    CandidatoViewModel vmm = new CandidatoViewModel()
                     {
                         NombreCandidato = i.nombre,
                         ApellidoPaternoCandidato = i.paterno,
                         ApellidoMaternoCandidato = i.materno,
-                        PartidoPoliticoId = i.partido
+                        PartidoPoliticoId = i.partido,
+                        Id = i.id
                     };
 
-
-
-                    candidatosMunicipales.Add(vm);
+                    candidatosMunicipales.Add(vmm);
                 }
 
-                Session["presi"] = candidatosPresidentes;
-                Session["gober"] = candidatosGober;
-                Session["muni"] = candidatosMunicipales;
 
+                Session["muni"] = candidatosMunicipales;
+                return View();
+            }
+        }
+
+        public ActionResult Graficas(CandidatoViewModel vm)
+        {
+            Voto vv = new Voto();
+            using (INEDbContext dbCtx = new INEDbContext())
+            {
+
+
+                vv.CandidatoId = vm.Id;
+                vv.votos = 1;
+                dbCtx.Votos.Add(vv);
+                dbCtx.SaveChanges();
 
                 return View();
             }
+        }
 
+        public ActionResult contacto()
+        {
+
+            return View();
         }
 
 
-
-
-
     }
+
 }

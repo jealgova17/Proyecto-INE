@@ -10,6 +10,9 @@ namespace Proyecto_INE.ViewModels
 {
     public class CandidatoViewModel
     {
+        [Key]
+        public int Id { get; set; }
+
         [Required(ErrorMessage = "El campo Nombre del Candidato es obligatorio")]//Obligatorio
         [StringLength(100, ErrorMessage = "La longitud es de 100 caracteres")]//Longitud de la cadena
         public string NombreCandidato { get; set; }
@@ -21,6 +24,7 @@ namespace Proyecto_INE.ViewModels
         [Required(ErrorMessage = "El campo Apellido Materno del Candidato es obligatorio")]//Obligatorio
         [StringLength(100, ErrorMessage = "La longitud es de 100 caracteres")]
         public string ApellidoMaternoCandidato { get; set; }
+
 
         [ForeignKey("PartidoPolitico")]
         [Required(ErrorMessage = "El campo PartidoPoliticoId es obligatorio")]

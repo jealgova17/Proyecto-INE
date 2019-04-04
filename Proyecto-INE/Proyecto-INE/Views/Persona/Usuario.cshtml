@@ -39,74 +39,77 @@
             </div>
             <div class="nav-wrapper">
                 <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="Candidatos.html">Candidatos</a></li>
+                    <li><a href="@Url.Action("Index", "Persona")">Inicio</a></li>
+                    <li><a href="@Url.Action("Candidato", "Persona")">Candidato</a></li>
                     <li><a href="#">Estadisticas</a></li>
                     <li><a href="@Url.Action("Login", "Persona")">Votar</a></li>
+                    <li><a href="@Url.Action("Contacto", "Persona")">Contacto</a></li>
                 </ul>
             </div>
         </nav>
     </div>
 
+    @using (Html.BeginForm("Usuario", "Persona", FormMethod.Post))
+    {
+        <div class="centerrr">
+            @Scripts.Render("~/bundles/jquery")
+            @Scripts.Render("~/bundles/bootstrap")
 
-    <div class="centerrr">
-        @Scripts.Render("~/bundles/jquery")
-        @Scripts.Render("~/bundles/bootstrap")
+            <div align='center'>
+                <img src="~/Images/@ViewBag.foto" width="150" height="150" />
+            </div>
+            <br /><br />
+            <dl class="dl-horizontal">
+                <dt>
+                    @Html.DisplayNameFor(model => model.Nombre)
+                </dt>
 
-        <div align='center'>
-            <img src="~/Images/@ViewBag.foto" width="150" height="150" />
+                <dd>
+                    <div class="cen">   @Html.DisplayFor(model => model.Nombre) </div>
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.ApellidoPaterno)
+                </dt>
+
+                <dd>
+                    <div class="cen">    @Html.DisplayFor(model => model.ApellidoPaterno) </div>
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.ApellidoMaterno)
+                </dt>
+
+                <dd>
+                    <div class="cen">    @Html.DisplayFor(model => model.ApellidoMaterno) </div>
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.FechaNacimiento)
+                </dt>
+
+                <dd>
+                    <div class="cen">  @Html.DisplayFor(model => model.FechaNacimiento) </div>
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Sexo)
+                </dt>
+
+                <dd>
+                    <div class="cen">  @Html.DisplayFor(model => model.Sexo) </div>
+                </dd>
+
+
+
+            </dl>
+
+            <button type="submit" value="Confirmar" class="btn btn-default">Aceptar</button>
+            
         </div>
-        <br /><br />
-        <dl class="dl-horizontal">
-            <dt>
-                @Html.DisplayNameFor(model => model.Nombre)
-            </dt>
+    }
 
-            <dd>
-                <div class="cen">   @Html.DisplayFor(model => model.Nombre) </div>
-            </dd>
-
-            <dt>
-                @Html.DisplayNameFor(model => model.ApellidoPaterno)
-            </dt>
-
-            <dd>
-                <div class="cen">    @Html.DisplayFor(model => model.ApellidoPaterno) </div>
-            </dd>
-
-            <dt>
-                @Html.DisplayNameFor(model => model.ApellidoMaterno)
-            </dt>
-
-            <dd>
-                <div class="cen">    @Html.DisplayFor(model => model.ApellidoMaterno) </div>
-            </dd>
-
-            <dt>
-                @Html.DisplayNameFor(model => model.FechaNacimiento)
-            </dt>
-
-            <dd>
-                <div class="cen">  @Html.DisplayFor(model => model.FechaNacimiento) </div>
-            </dd>
-
-            <dt>
-                @Html.DisplayNameFor(model => model.Sexo)
-            </dt>
-
-            <dd>
-                <div class="cen">  @Html.DisplayFor(model => model.Sexo) </div>
-            </dd>
-
-
-
-        </dl>
-
-        <a type="submit" value="Confirmar" href="@Url.Action("Normas", "Persona")" class="button">Aceptar</a>
-
-    </div>
-
-
-</body>
+    </body>
+    
 </html>
 
