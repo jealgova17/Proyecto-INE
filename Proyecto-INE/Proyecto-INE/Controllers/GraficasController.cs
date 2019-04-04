@@ -21,6 +21,7 @@ namespace Proyecto_INE.Controllers
         {
             int j = 0;
 
+            //
             var query1 = (from p in dbCtx.PartidoPoliticos
                          join c in dbCtx.Candidatos on p.Id equals c.PartidoPoliticoId
                          join v in dbCtx.Votos on c.Id equals v.CandidatoId
@@ -60,46 +61,27 @@ namespace Proyecto_INE.Controllers
 
 
 
-            //Cargar DropDownList de los munipios
-            var querymunicipios = (from m in dbCtx.Municipios
-                                   join c in dbCtx.Candidatos on m.Id equals c.MunicipioId
-                                   join v in dbCtx.Votos on c.Id equals v.CandidatoId
-                                   where v.votos != 0                             
-                                                                 
-                                   orderby m.Nombre
-                                   select new
-                                   {
-                                   Id = m.Id,
-                                   Nombre = m.Nombre
+            int variable = int.Parse(Session["municipio"].ToString());
 
-                                   }).ToList();
+            var query4 = (from c in dbCtx.Candidatos
+                          join v in dbCtx.Votos
+                          on c.Id equals v.CandidatoId
+                          where c.PuestoId == 3 
+                          && c.MunicipioId == variable
 
-            foreach (var item in querymunicipios)
-            {
-                j = item.Id;
-            }
-
-            IEnumerable<SelectListItem> municipio = querymunicipios.GroupBy(x => x.Nombre)
-                                                  
-                .Select(x => new SelectListItem
-                {
-                    Text = x.First().Nombre,
-                    Value = j.ToString()
-                }).ToList();
-
-
-            TempData["municipio"] = municipio;
-
-
-
-
-
+                          group c by c.NombreCandidato into ca
+                          select new
+                          {
+                              Candidato = ca.Key,
+                              Votos = ca.Count()
+                          }).ToList();
 
 
 
             List<PieSeriesData> ConsultaPartidosPoliticos = new List<PieSeriesData>();
             List<PieSeriesData> ConsultaPresidentes = new List<PieSeriesData>();
             List<PieSeriesData> ConsultaGobernadores = new List<PieSeriesData>();
+            List<PieSeriesData> ConsultaAcaldes = new List<PieSeriesData>();
 
 
 
@@ -116,9 +98,14 @@ namespace Proyecto_INE.Controllers
                 ConsultaPresidentes.Add(new PieSeriesData { Name = item.Candidato.ToString(), Y = Convert.ToInt32(item.Votos) });
             }
 
-            foreach (var item in query2)
+            foreach (var item in query3)
             {
                 ConsultaGobernadores.Add(new PieSeriesData { Name = item.Candidato.ToString(), Y = Convert.ToInt32(item.Votos) });
+            }
+
+            foreach (var item in query4)
+            {
+                ConsultaAcaldes.Add(new PieSeriesData { Name = item.Candidato.ToString(), Y = Convert.ToInt32(item.Votos) });
             }
 
 
@@ -129,8 +116,8 @@ namespace Proyecto_INE.Controllers
             ViewData["ConsultaPartidosPoliticos"] = ConsultaPartidosPoliticos;
             ViewData["ConsultaPresidentes"] = ConsultaPresidentes;
             ViewData["ConsultaGobernadores"] = ConsultaGobernadores;
-
-
+            ViewData["ConsultaAcaldes"] = ConsultaAcaldes;
+            
 
             return View();
         }
