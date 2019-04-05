@@ -58,41 +58,42 @@
      
 
 
-        <div class="mySlides fade">
-            <table>
-                <CAPTION>PROCESO ELECTORAL FEDERAL 2018-2019</CAPTION>
-                <CAPTION>FEDERAL</CAPTION>
-                <thead>
+    <div class="mySlides fade">
+        <table>
+            <CAPTION>PROCESO ELECTORAL FEDERAL 2018-2019</CAPTION>
+            <CAPTION>FEDERAL</CAPTION>
+            <thead>
+                <tr>
+                    <th>Partido</th>
+                    <th>Candidato</th>
+                    <th></th>
+                    <th>Votar</th>
+
+                </tr>
+            </thead>
+            @foreach (var item in list2)
+            {
+                <from action="">
+
                     <tr>
-                        <th>Partido</th>
-                        <th>Candidato</th>
-                        <th></th>
-                        <th>Votar</th>
+                        <td> <img src="@Url.Content("~/PartidosPoliticos/" + item.PartidoPoliticoId + ".jpg")" width="150" height="150" /></td>
+                        <td> @Html.DisplayFor(modelItem => item.NombreCandidato)  @Html.DisplayFor(modelItem => item.ApellidoPaternoCandidato)  @Html.DisplayFor(modelItem => item.ApellidoMaternoCandidato)</td>
+                        <td> <img src="@Url.Content("~/Candidatos/" + item.NombreCandidato + ".jpg")" width="150" height="150" /></td>
+                        <td>
+                            <div class="col-md-6">
+                                @Html.RadioButtonFor(modelItem => modelItem.Id, item.Id) Votar
 
+                            </div>
+                        </td>
                     </tr>
-                </thead>
-                @foreach (var item in list2)
-                {
-                    <from action="">
 
-                        <tr>
-                            <td> <img src="@Url.Content("~/PartidosPoliticos/" + item.PartidoPoliticoId + ".jpg")" width="150" height="150" /></td>
-                            <td> @Html.DisplayFor(modelItem => item.NombreCandidato)  @Html.DisplayFor(modelItem => item.ApellidoPaternoCandidato)  @Html.DisplayFor(modelItem => item.ApellidoMaternoCandidato)</td>
-                            <td> <img src="@Url.Content("~/Candidatos/" + item.NombreCandidato + ".jpg")" width="150" height="150" /></td>
-                            <td>
-                                <div class="col-md-6">
-                                    @Html.RadioButtonFor(modelItem => modelItem.Id, item.Id) Votar
+                </from>
+            }
 
-                                </div>
-                            </td>
-                        </tr>
+        </table>
+        <button type="submit" value="Confirmar" class="btn btn-default">Ingresar</button>
 
-                    </from>
-                }
-
-            </table>
-
-        </div>
+    </div>
 
 
 

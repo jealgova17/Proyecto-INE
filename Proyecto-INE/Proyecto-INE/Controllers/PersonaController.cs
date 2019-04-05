@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using Highsoft.Web.Mvc.Charts;
+using Newtonsoft.Json;
 using Proyecto_INE.Models;
 using Proyecto_INE.ViewModels;
 using System;
@@ -71,7 +72,7 @@ namespace Proyecto_INE.Controllers
                     p = dbCtx.Personas.Where(x => x.Curp == fileName).SingleOrDefault();
 
                     Session["municipio"] = p.MunicipioId;
-                    return RedirectToAction("Normas", "Persona");
+                    
 
                 }
             }
@@ -235,7 +236,111 @@ namespace Proyecto_INE.Controllers
                 dbCtx.Votos.Add(vv);
                 dbCtx.SaveChanges();
 
+
+
+
+                int j = 0;
+
+                //
+                var query1 = (from p in dbCtx.PartidoPoliticos
+                              join c in dbCtx.Candidatos on p.Id equals c.PartidoPoliticoId
+                              join v in dbCtx.Votos on c.Id equals v.CandidatoId
+                              group p by p.Nombre into pa
+                              select new
+                              {
+                                  Nombre = pa.Key,
+                                  Votos = pa.Count()
+                              }).ToList();
+
+
+                //Presidentes
+                var query2 = (from c in dbCtx.Candidatos
+                              join v in dbCtx.Votos
+                              on c.Id equals v.CandidatoId
+                              where c.PuestoId == 1
+
+                              group c by c.NombreCandidato into ca
+                              select new
+                              {
+                                  Candidato = ca.Key,
+                                  Votos = ca.Count()
+                              }).ToList();
+
+                //Gobernadores
+                var query3 = (from c in dbCtx.Candidatos
+                              join v in dbCtx.Votos
+                              on c.Id equals v.CandidatoId
+                              where c.PuestoId == 2
+
+                              group c by c.NombreCandidato into ca
+                              select new
+                              {
+                                  Candidato = ca.Key,
+                                  Votos = ca.Count()
+                              }).ToList();
+
+
+
+                int variable = int.Parse(Session["municipio"].ToString());
+
+                var query4 = (from c in dbCtx.Candidatos
+                              join v in dbCtx.Votos
+                              on c.Id equals v.CandidatoId
+                              where c.PuestoId == 3
+                              && c.MunicipioId == variable
+
+                              group c by c.NombreCandidato into ca
+                              select new
+                              {
+                                  Candidato = ca.Key,
+                                  Votos = ca.Count()
+                              }).ToList();
+
+
+
+                List<PieSeriesData> ConsultaPartidosPoliticos = new List<PieSeriesData>();
+                List<PieSeriesData> ConsultaPresidentes = new List<PieSeriesData>();
+                List<PieSeriesData> ConsultaGobernadores = new List<PieSeriesData>();
+                List<PieSeriesData> ConsultaAcaldes = new List<PieSeriesData>();
+
+
+
+
+
+
+                foreach (var item in query1)
+                {
+                    ConsultaPartidosPoliticos.Add(new PieSeriesData { Name = item.Nombre.ToString(), Y = Convert.ToInt32(item.Votos) });
+                }
+
+                foreach (var item in query2)
+                {
+                    ConsultaPresidentes.Add(new PieSeriesData { Name = item.Candidato.ToString(), Y = Convert.ToInt32(item.Votos) });
+                }
+
+                foreach (var item in query3)
+                {
+                    ConsultaGobernadores.Add(new PieSeriesData { Name = item.Candidato.ToString(), Y = Convert.ToInt32(item.Votos) });
+                }
+
+                foreach (var item in query4)
+                {
+                    ConsultaAcaldes.Add(new PieSeriesData { Name = item.Candidato.ToString(), Y = Convert.ToInt32(item.Votos) });
+                }
+
+
+
+
+
+
+                ViewData["ConsultaPartidosPoliticos"] = ConsultaPartidosPoliticos;
+                ViewData["ConsultaPresidentes"] = ConsultaPresidentes;
+                ViewData["ConsultaGobernadores"] = ConsultaGobernadores;
+                ViewData["ConsultaAcaldes"] = ConsultaAcaldes;
+
+
                 return View();
+            
             }
         }
 

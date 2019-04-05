@@ -53,8 +53,8 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
-    <Reference Include="Highcharts.Web.Mvc, Version=7.0.1.0, Culture=neutral, PublicKeyToken=90b74bd27a557bd3, processorArchitecture=MSIL">
-      <HintPath>..\packages\Highsoft.Highcharts.7.0.3.10\lib\net40\Highcharts.Web.Mvc.dll</HintPath>
+    <Reference Include="Highcharts.Web.Mvc, Version=7.0.3.0, Culture=neutral, PublicKeyToken=90b74bd27a557bd3, processorArchitecture=MSIL">
+      <HintPath>..\packages\Highsoft.Highcharts.7.0.3.8\lib\net40\Highcharts.Web.Mvc.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.AspNetCore.Antiforgery, Version=1.1.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNetCore.Antiforgery.1.1.2\lib\net451\Microsoft.AspNetCore.Antiforgery.dll</HintPath>
@@ -670,13 +670,12 @@
     <Content Include="Views\Persona\Login.cshtml" />
     <Content Include="Views\Persona\Normas.cshtml" />
     <Content Include="Views\Persona\Usuario.cshtml" />
-    <Content Include="Views\Persona\Grafica.cshtml" />
     <Content Include="Views\Persona\Contacto.cshtml" />
     <Content Include="Views\Persona\BoletaPresidente.cshtml" />
     <Content Include="Views\Persona\BoletaEstado.cshtml" />
     <Content Include="Views\Persona\BoletaMunicipio.cshtml" />
-    <Content Include="Views\Persona\Graficas.cshtml" />
     <Content Include="Views\Graficas\grafica1.cshtml" />
+    <Content Include="Views\Persona\Graficas.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
