@@ -1,8 +1,8 @@
-﻿@{
-    ViewBag.Title = "grafica1";
+﻿@model Proyecto_INE.Models.Candidato
+
+@{
+    Layout = null;
 }
-
-
 
 <!DOCTYPE html>
 
@@ -83,47 +83,48 @@
 
 
             @(Html.Highsoft().GetHighcharts(
-                                    new Highcharts
-                                    {
-                                        Chart = new Highsoft.Web.Mvc.Charts.Chart
-                                        {
-                                            PlotBackgroundColor = null,
-                                            PlotBorderWidth = null,
-                                            PlotShadow = new Shadow
+                                            new Highcharts
                                             {
-                                                Enabled = false
-                                            }
-                                        },
-                                        Title = new Title
-                                        {
-                                            Text = "Presidentes"
-                                        },
-                                        Tooltip = new Tooltip
-                                        {
-                                            PointFormat = "{series.name}: <b>{point.percentage:.1f}%</b>"
-                                        },
-                                        PlotOptions = new PlotOptions
-                                        {
-                                            Pie = new PlotOptionsPie
-                                            {
-                                                AllowPointSelect = true,
-                                                Cursor = PlotOptionsPieCursor.Pointer,
-                                                DataLabels = new PlotOptionsPieDataLabels
+                                                Chart = new Highsoft.Web.Mvc.Charts.Chart
                                                 {
-                                                    Enabled = true,
-                                                    Format = "<b>{point.name}</b>: {point.percentage:.1f} %"
+                                                    PlotBackgroundColor = null,
+                                                    PlotBorderWidth = null,
+                                                    PlotShadow = new Shadow
+                                                    {
+                                                        Enabled = false
+                                                    }
+                                                },
+                                                Title = new Title
+                                                {
+                                                    Text = "Presidentes"
+                                                },
+                                                Tooltip = new Tooltip
+                                                {
+                                                    PointFormat = "{series.name}: <b>{point.percentage:.1f}%</b>"
+                                                },
+                                                PlotOptions = new PlotOptions
+                                                {
+                                                    Pie = new PlotOptionsPie
+                                                    {
+                                                        AllowPointSelect = true,
+                                                        Cursor = PlotOptionsPieCursor.Pointer,
+                                                        DataLabels = new PlotOptionsPieDataLabels
+                                                        {
+                                                            Enabled = true,
+                                                            Format = "<b>{point.name}</b>: {point.percentage:.1f} %"
+                                                        }
+                                                    }
+                                                },
+                                                Series = new List<Series>
+                                                {
+                new PieSeries
+                {
+                    Name = "Porcentaje",
+                    Data = @ViewData["ConsultaPresidentes"] as List<PieSeriesData>
+                },
+
                                                 }
                                             }
-                                        },
-                                        Series = new List<Series>
-                                        {
-            new PieSeries
-            {
-                Name = "Porcentaje",
-                Data = @ViewData["ConsultaPresidentes"] as List<PieSeriesData>
-            },
-
-                                        }
-                                    }
-                                    , "chart")
+                                            , "chart")
             )
+

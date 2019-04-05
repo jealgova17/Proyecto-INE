@@ -676,6 +676,14 @@
     <Content Include="Views\Persona\BoletaMunicipio.cshtml" />
     <Content Include="Views\Graficas\grafica1.cshtml" />
     <Content Include="Views\Persona\Graficas.cshtml" />
+    <Content Include="Views\Graficas\ConsultaAlcaldes.cshtml" />
+    <Content Include="Views\Graficas\ConsultaGobernadores.cshtml" />
+    <Content Include="Views\Graficas\ConsultaPartidosPoliticos.cshtml" />
+    <Content Include="Views\Graficas\Presidentes.cshtml" />
+    <Content Include="Views\Persona\ConsultaPartidosPoliticos.cshtml" />
+    <Content Include="Views\Persona\ConsultaPresidentes.cshtml" />
+    <Content Include="Views\Persona\ConsultaGobernadores.cshtml" />
+    <Content Include="Views\Persona\ConsultaAlcaldes.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

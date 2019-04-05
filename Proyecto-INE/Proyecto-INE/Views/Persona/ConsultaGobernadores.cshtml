@@ -1,8 +1,8 @@
-﻿@{
-    ViewBag.Title = "grafica1";
+﻿@model Proyecto_INE.Models.Candidato
+
+@{
+    Layout = null;
 }
-
-
 
 <!DOCTYPE html>
 
@@ -52,9 +52,7 @@
             </div>
         </nav>
         <div class="gra1">
-
-
-            @* Aqui empieza la segunda Presidentes *@
+            @* Aqui empieza la tercera Gobernadores*@
 
             <script src="http://code.highcharts.com/highcharts.js"></script>
             <script src="https://code.highcharts.com/modules/exporting.js"></script>
@@ -63,20 +61,20 @@
 
             <script type="text/javascript">
 
-                // Radialize the colors
-                Highcharts.getOptions().colors = Highcharts.map(Highcharts.getOptions().colors, function (color) {
-                    return {
-                        radialGradient: {
-                            cx: 0.5,
-                            cy: 0.3,
-                            r: 0.7
-                        },
-                        stops: [
-                            [0, color],
-                            [1, Highcharts.Color(color).brighten(-0.3).get('rgb')] // darken
-                        ]
-                    };
-                });
+            // Radialize the colors
+            Highcharts.getOptions().colors = Highcharts.map(Highcharts.getOptions().colors, function (color) {
+                return {
+                    radialGradient: {
+                        cx: 0.5,
+                        cy: 0.3,
+                        r: 0.7
+                    },
+                    stops: [
+                        [0, color],
+                        [1, Highcharts.Color(color).brighten(-0.3).get('rgb')] // darken
+                    ]
+                };
+            });
 
 
             </script>
@@ -96,7 +94,7 @@
                                         },
                                         Title = new Title
                                         {
-                                            Text = "Presidentes"
+                                            Text = "Gobernadores"
                                         },
                                         Tooltip = new Tooltip
                                         {
@@ -120,10 +118,11 @@
             new PieSeries
             {
                 Name = "Porcentaje",
-                Data = @ViewData["ConsultaPresidentes"] as List<PieSeriesData>
+                Data = @ViewData["ConsultaGobernadores"] as List<PieSeriesData>
             },
 
                                         }
                                     }
                                     , "chart")
             )
+

@@ -100,9 +100,6 @@ namespace Proyecto_INE.Controllers
             return View();
         }
 
-
-
-
         public ActionResult ConsultaAlcaldes()
         {
             int variable = int.Parse(Session["municipio"].ToString());
