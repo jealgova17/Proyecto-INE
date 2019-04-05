@@ -42,18 +42,18 @@
             </div>
             <div class="nav-wrapper">
                 <ul>
-                    <li><a href="@Url.Action("Index", "Persona")">Inicio</a></li>
+                    @*<li><a href="@Url.Action("Index", "Persona")">Inicio</a></li>
                     <li><a href="@Url.Action("Candidato", "Persona")">Candidato</a></li>
-                    <li><a href="#">Estadisticas</a></li>
+                    <li><a href="@Url.Action("ConsultaPartidosPoliticos", "Persona")">Candidato</a></li>
                     <li><a href="@Url.Action("Login", "Persona")">Votar</a></li>
-                    <li><a href="@Url.Action("Contacto", "Persona")">Contacto</a></li>
+                    <li><a href="@Url.Action("Contacto", "Persona")">Contacto</a></li>*@
                 </ul>
             </div>
         </nav>
     </div>
 
 
-    @using (Html.BeginForm("Graficas", "Persona", FormMethod.Post))
+    @using (Html.BeginForm("ConsultaPartidosPoliticos","Persona", FormMethod.Post))
     {
 
         List<Proyecto_INE.ViewModels.CandidatoViewModel> list3 = (List<Proyecto_INE.ViewModels.CandidatoViewModel>)Session["muni"];

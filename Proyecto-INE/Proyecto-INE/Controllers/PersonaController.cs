@@ -51,8 +51,9 @@ namespace Proyecto_INE.Controllers
                     {
                         Response.Write("<script language='javascript' type='text/javascript'>alert('El CURP o CIC son incorrectos ');</script>");
                         return View(p);
-                    }
+                    }    
                 }
+               
             }
             return View(p);
         }
@@ -79,6 +80,9 @@ namespace Proyecto_INE.Controllers
 
                 }
             }
+
+            Session["curp"] = p.Id;
+
             return View(p);
         }
 
@@ -349,40 +353,66 @@ namespace Proyecto_INE.Controllers
 
         public ActionResult ConsultaPartidosPoliticos(CandidatoViewModel vm)
         {
-
             Voto vv = new Voto();
             using (INEDbContext dbCtx = new INEDbContext())
             {
+               int ss= Convert.ToInt32(Session["curp"]);
 
-
-                vv.CandidatoId = vm.Id;
-                vv.votos = 1;
-                dbCtx.Votos.Add(vv);
-                dbCtx.SaveChanges();
-
-                //PartidosPoliticos
-                var query1 = (from p in dbCtx.PartidoPoliticos
-                              join c in dbCtx.Candidatos on p.Id equals c.PartidoPoliticoId
-                              join v in dbCtx.Votos on c.Id equals v.CandidatoId
-                              group p by p.Nombre into pa
-                              select new
-                              {
-                                  Nombre = pa.Key,
-                                  Votos = pa.Count()
-                              }).ToList();
-
-
-                List<PieSeriesData> ConsultaPartidosPoliticos = new List<PieSeriesData>();
-
-                foreach (var item in query1)
+                if (ss!=0)
                 {
-                    ConsultaPartidosPoliticos.Add(new PieSeriesData { Name = item.Nombre.ToString(), Y = Convert.ToInt32(item.Votos) });
+                    vv.CandidatoId = vm.Id;
+                    vv.votos = 1;
+                    dbCtx.Votos.Add(vv);
+                    dbCtx.SaveChanges();
+
+                    //PartidosPoliticos
+                    var query1 = (from p in dbCtx.PartidoPoliticos
+                                  join c in dbCtx.Candidatos on p.Id equals c.PartidoPoliticoId
+                                  join v in dbCtx.Votos on c.Id equals v.CandidatoId
+                                  group p by p.Nombre into pa
+                                  select new
+                                  {
+                                      Nombre = pa.Key,
+                                      Votos = pa.Count()
+                                  }).ToList();
+
+
+                    List<PieSeriesData> ConsultaPartidosPoliticos = new List<PieSeriesData>();
+
+                    foreach (var item in query1)
+                    {
+                        ConsultaPartidosPoliticos.Add(new PieSeriesData { Name = item.Nombre.ToString(), Y = Convert.ToInt32(item.Votos) });
+                    }
+                    ViewData["ConsultaPartidosPoliticos"] = ConsultaPartidosPoliticos;
                 }
-                ViewData["ConsultaPartidosPoliticos"] = ConsultaPartidosPoliticos;
+                else
+                {
+                    var query1 = (from p in dbCtx.PartidoPoliticos
+                                  join c in dbCtx.Candidatos on p.Id equals c.PartidoPoliticoId
+                                  join v in dbCtx.Votos on c.Id equals v.CandidatoId
+                                  group p by p.Nombre into pa
+                                  select new
+                                  {
+                                      Nombre = pa.Key,
+                                      Votos = pa.Count()
+                                  }).ToList();
+
+
+                    List<PieSeriesData> ConsultaPartidosPoliticos = new List<PieSeriesData>();
+
+                    foreach (var item in query1)
+                    {
+                        ConsultaPartidosPoliticos.Add(new PieSeriesData { Name = item.Nombre.ToString(), Y = Convert.ToInt32(item.Votos) });
+                    }
+                    ViewData["ConsultaPartidosPoliticos"] = ConsultaPartidosPoliticos;
+
+
+                }
+
 
                 return View();
             }
-        }
+        } 
 
         public ActionResult ConsultaPresidentes()
         {
