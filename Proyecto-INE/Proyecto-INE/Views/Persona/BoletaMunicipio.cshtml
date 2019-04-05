@@ -56,6 +56,8 @@
     @using (Html.BeginForm("ConsultaPartidosPoliticos","Persona", FormMethod.Post))
     {
 
+
+
         List<Proyecto_INE.ViewModels.CandidatoViewModel> list3 = (List<Proyecto_INE.ViewModels.CandidatoViewModel>)Session["muni"];
 
         <div class="mySlides fade">
@@ -76,10 +78,10 @@
                     <from action="">
 
                         <tr>
-                            <td> <img src="@Url.Content("~/PartidosPoliticos/" + item.PartidoPoliticoId + ".jpg")" width="150" height="150" /></td>
+                            <td> <img id="esd" src="@Url.Content("~/PartidosPoliticos/" + item.PartidoPoliticoId + ".jpg")" /></td>
                             <td> @Html.DisplayFor(modelItem => item.NombreCandidato)  @Html.DisplayFor(modelItem => item.ApellidoPaternoCandidato)  @Html.DisplayFor(modelItem => item.ApellidoMaternoCandidato)</td>
 
-                            <td> <img src="@Url.Content("~/Candidatos/" + item.NombreCandidato + ".jpg")" width="150" height="150" /></td>
+                            <td> <img id="esd" src="@Url.Content("~/Candidatos/" + item.NombreCandidato + ".jpg")"  /></td>
                             <td>
                                 <div class="col-md-6">
                                     @Html.RadioButtonFor(modelItem => modelItem.Id, item.Id) Envio Estándar
@@ -92,23 +94,11 @@
 
             </table>
 
-            <button type="submit" value="Confirmar" class="btn btn-default">Ingresar</button>
+            <button type="submit" value="Confirmar" class="button">Ingresar</button>
 
         </div>
     }
 
-
-
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-    <br>
-
-    <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-    </div>
 
     <script>
             var slideIndex = 1;
