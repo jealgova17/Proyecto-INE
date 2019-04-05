@@ -21,6 +21,7 @@ namespace Proyecto_INE.Controllers
         {
             return View();
         }
+
         public ActionResult Candidato()
         {
             return View();
@@ -58,6 +59,8 @@ namespace Proyecto_INE.Controllers
 
         public ActionResult Usuario()
         {
+
+
             Persona p = null;
             if (Session["curp"] != null)
             {

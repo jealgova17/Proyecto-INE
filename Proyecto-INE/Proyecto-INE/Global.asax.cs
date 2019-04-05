@@ -18,6 +18,7 @@ namespace Proyecto_INE
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
             Database.SetInitializer<Models.INEDbContext>(new DropCreateDatabaseIfModelChanges<Models.INEDbContext>());
+
         }
     }
 }
